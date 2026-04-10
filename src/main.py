@@ -13,8 +13,8 @@ from langgraph.graph import StateGraph, START, END
 from langchain_core.messages import HumanMessage, BaseMessage, AIMessage
 from src.state import ProjectState
 from src.agents.orchestrator import orchestrator_node
+from src.agents.req_master import req_master_node
 from src.agents.workers import (
-    req_master_node,
     req_master_interview_node,
     sdd_specify_node,
     sdd_plan_node,

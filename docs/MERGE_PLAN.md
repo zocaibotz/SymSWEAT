@@ -9,12 +9,12 @@ This document outlines the 4-phase integration of **SWEAT** and **SWARMINSYM** i
 - [x] Commit to GitHub as the base layer.
 
 ## Milestone 1: Unified PM Intake (Absorb SWARMINSYM Phase 0)
-- [ ] Extract `pm_agent.py` from SWARMINSYM.
-- [ ] Refactor it to plug into SWEAT as the new `ReqMaster` entrypoint.
-- [ ] Ensure SymSWEAT accepts raw natural language prompts and automatically scaffolds the GitHub repo (`github_bootstrap_node`).
-- [ ] Generate the full Linear Epic with strict ticket dependencies (DAG).
-- [ ] Remove redundant PM Intake files from the old SWARMINSYM directory.
-- [ ] Commit to GitHub (`Milestone 1 Completed`).
+- [x] Extract `pm_agent.py` from SWARMINSYM.
+- [x] Refactor it to plug into SWEAT as the new `ReqMaster` entrypoint.
+- [x] Ensure SymSWEAT accepts raw natural language prompts and automatically scaffolds the GitHub repo (`github_bootstrap_node`).
+- [x] Generate the full Linear Epic with strict ticket dependencies (DAG).
+- [x] Remove redundant PM Intake files from the old SWARMINSYM directory.
+- [x] Commit to GitHub (`Milestone 1 Completed`).
 
 ## Milestone 2: Replace the Poller with ScrumLord
 - [ ] Delete SWARMINSYM's fragile `symphony_poller.py` and `run_swarm.sh`.
