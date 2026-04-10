@@ -1,0 +1,19 @@
+{
+  "requirements_interview_status": "awaiting_human",
+  "run_id": "run_2026-03-04T03-47-37Z_b83bcb",
+  "run_started": true,
+  "next_agent": "__end__",
+  "project_workspace_path": "projects/config-smoke-001",
+  "project_state_version": 1,
+  "requirements_open_questions": [
+    "What business outcome should this feature achieve?",
+    "What is in-scope and explicitly out-of-scope?",
+    "What are the acceptance criteria we must test?",
+    "Any constraints (security/performance/deadline/tech stack)?"
+  ],
+  "project_id": "config-smoke-001",
+  "requirements_revision_reasons": [
+    "missing_requirements"
+  ],
+  "snapshot_kind": "resume"
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "run_2026-02-28T08-40-54Z_3e03d3",
+  "final_next_agent": "__end__",
+  "steps": 1,
+  "trace": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "__end__",
+      "msg": "State version conflict: expected version 28 but current is 29. Halting run for safe retry."
+    }
+  ]
+}

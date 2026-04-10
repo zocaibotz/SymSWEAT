@@ -1,0 +1,137 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "Users can create new habits with a unique name.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "Users can mark a habit as completed for the current day or a specific past date.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "System accurately calculates 'current streak' as the number of consecutive days of completion ending today or yesterday.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "System accurately calculates 'longest streak' as the historical maximum consecutive days of completion.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "System provides a weekly view showing completion status for the last 7 days.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "A dedicated function/hook `send_reminders()` exists for future integration with notification systems.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-007",
+      "requirement": "The application can load and save its state to a local file (e.g., `habits.json`) to ensure data persistence.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-007.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-007.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-007.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

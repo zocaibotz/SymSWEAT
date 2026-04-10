@@ -1,0 +1,118 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "User can add an expense with amount, category, date, and an optional description.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "User can list all recorded expenses in a formatted table.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "The system provides a 'Monthly Summary' view that aggregates total spending per category for the current month.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "User can export all expense data to a 'expenses.csv' file.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "The application persists data between sessions using a local storage mechanism.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "The application handles invalid input (e.g., non-numeric amounts) without crashing.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

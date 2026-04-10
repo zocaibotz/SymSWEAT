@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-03-21T14:08:55Z",
+  "project_dir": "projects/overnight-e2e-01",
+  "state_dir": "projects/overnight-e2e-01/state",
+  "events_path": "projects/overnight-e2e-01/state/run_events.jsonl",
+  "run_id": "run_2026-02-27T15-56-30Z_66bd36",
+  "validator": "scripts/validate_strict_e2e.py",
+  "success": true,
+  "command": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/validate_strict_e2e.py projects/overnight-e2e-01/state/run_events.jsonl run_2026-02-27T15-56-30Z_66bd36",
+  "exit_code": 0,
+  "stdout": "PASS strict e2e route checklist\n",
+  "stderr": ""
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "cutover_dry_run",
+  "flags": {
+    "SWEAT_V2_ENABLED": "false",
+    "SWEAT_V2_SHADOW_MODE": "true",
+    "SWEAT_V2_CUTOVER_STAGE": "planning"
+  },
+  "checks": {
+    "enabled_is_true": false,
+    "shadow_is_false": false
+  },
+  "ready": false
+}

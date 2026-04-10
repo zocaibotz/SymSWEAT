@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-02-28T12:51:37Z",
+  "project_dir": "projects/command-center-dashboard",
+  "project_id": "command-center-dashboard",
+  "success": false,
+  "steps": [
+    {
+      "cmd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/run_strict_e2e_cycle.py --project-dir projects/command-center-dashboard --max-steps 100",
+      "code": 0,
+      "stdout": "[MainLLM] effective model order: codex_cli -> gemini_cli -> minimax_api -> ollama\n[MainLLM] effective model order: codex_cli -> gemini_cli -> minimax_api -> ollama\n[MainLLM] effective model order: codex_cli -> gemini_cli -> minimax_api -> ollama\n[CodeSmith] effective model order: codex_cli -> gemini_cli -> minimax_api -> ollama\nreports/runs/strict_e2e_cycle_20260228-125136.json\nrun_id=run_2026-02-28T08-40-54Z_3e03d3 steps=1 final_next_agent=__end__\n",
+      "stderr": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/lib/python3.14/site-packages/langchain_core/_api/deprecation.py:25: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.\n  from pydantic.v1.fields import FieldInfo as FieldInfoV1\n"
+    },
+    {
+      "cmd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/refresh_latest_run_report.py --project-dir projects/command-center-dashboard",
+      "code": 0,
+      "stdout": "reports/runs/latest_run_report.json\nevents=32 run_id=run_2026-02-28T08-40-54Z_3e03d3\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/run_strict_e2e_check.py --project-dir projects/command-center-dashboard",
+      "code": 0,
+      "stdout": "reports/runs/strict_e2e_validation.json\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/validate_latest_report.py reports/runs/latest_run_report.json command-center-dashboard",
+      "code": 0,
+      "stdout": "PASS: latest_run_report is fresh and project-matched\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT/.venv/bin/python scripts/validate_project1_dashboard.py projects/command-center-dashboard",
+      "code": 1,
+      "stdout": "FAIL missing required dashboard project artifacts:\n- docs/architecture/system-design.md\n",
+      "stderr": ""
+    }
+  ]
+}

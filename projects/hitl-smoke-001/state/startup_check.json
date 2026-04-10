@@ -1,0 +1,16 @@
+{
+  "run_id": "run_2026-03-03T23-43-49Z_153b39",
+  "project_id": "hitl-smoke-001",
+  "cwd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT",
+  "workspace_path": "projects/hitl-smoke-001",
+  "linear": {
+    "has_api_key": true,
+    "has_team_id": true
+  },
+  "providers": {
+    "has_gemini_api_key": true,
+    "has_openai_api_key": true,
+    "has_anthropic_api_key": true
+  },
+  "ts": 1772581429
+}

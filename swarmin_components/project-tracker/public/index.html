@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWARMINSYM Tracker Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">SWARMINSYM Tracker</p>
+          <h1>Project Intelligence Dashboard</h1>
+          <p class="hero-copy">
+            Track active delivery, historical outcomes, open problems, stage progress, and artifact coverage from a single operational view.
+          </p>
+        </div>
+        <form id="create-project-form" class="panel compact-form">
+          <div class="panel-header">
+            <h2>Create Project</h2>
+            <span class="badge neutral">Live</span>
+          </div>
+          <label>
+            <span>Name</span>
+            <input id="project-name" name="name" placeholder="Fraud Detection Rollout" required />
+          </label>
+          <label>
+            <span>Prompt / context</span>
+            <textarea id="project-prompt" name="prompt" rows="3" placeholder="Short prompt or delivery brief"></textarea>
+          </label>
+          <button type="submit" class="primary-button">Create project</button>
+          <p id="create-project-message" class="helper-text"></p>
+        </form>
+      </header>
+
+      <main class="dashboard-grid">
+        <section class="panel stats-panel">
+          <div class="panel-header">
+            <h2>Portfolio Snapshot</h2>
+            <span id="stats-updated" class="helper-text"></span>
+          </div>
+          <div id="stats-grid" class="stats-grid"></div>
+        </section>
+
+        <section class="panel projects-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Projects</h2>
+              <p class="helper-text">Browse current and historical workstreams with quick filtering.</p>
+            </div>
+            <div class="toolbar">
+              <div class="tabs" id="project-tabs">
+                <button class="tab active" data-tab="all" type="button">All</button>
+                <button class="tab" data-tab="current" type="button">Current</button>
+                <button class="tab" data-tab="historical" type="button">Historical</button>
+                <button class="tab" data-tab="stalled" type="button">Stalled</button>
+              </div>
+              <input id="project-search" type="search" placeholder="Search projects, stages, metadata" />
+            </div>
+          </div>
+          <div class="split-panels">
+            <div>
+              <div class="section-title-row">
+                <h3>Current Projects</h3>
+                <span id="current-count" class="counter"></span>
+              </div>
+              <div id="current-projects" class="project-list"></div>
+            </div>
+            <div>
+              <div class="section-title-row">
+                <h3>Historical Projects</h3>
+                <span id="historical-count" class="counter"></span>
+              </div>
+              <div id="historical-projects" class="project-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Recent Activity</h2>
+              <p class="helper-text">Latest decisions, problems, resolutions, and artifact updates.</p>
+            </div>
+          </div>
+          <div id="recent-activity" class="activity-feed"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/dashboard.js"></script>
+  </body>
+</html>

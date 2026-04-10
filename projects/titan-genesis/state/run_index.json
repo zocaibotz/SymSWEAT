@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "demo-001",
+  "runs": {
+    "run_2026-03-02T02-42-27Z_8069ff": {
+      "status": "failed",
+      "started_at_utc": "2026-03-02T03:27:03Z",
+      "ended_at_utc": "2026-03-02T03:27:11Z",
+      "last_seq": 6,
+      "last_event_id": "evt_000006_0b43",
+      "last_node": "zocai",
+      "idempotency_keys": {
+        "run_2026-03-02T02-42-27Z_8069ff:codesmith:enter:f2a01bf74cc5f7ee42ad863f732a37af148444ea2c6088ac12b9681ed30bd6da": "evt_000001_0392",
+        "run_2026-03-02T02-42-27Z_8069ff:codesmith:route:codesmith:f2a01bf74cc5f7ee42ad863f732a37af148444ea2c6088ac12b9681ed30bd6da": "evt_000002_02ea",
+        "run_2026-03-02T02-42-27Z_8069ff:codesmith:exit:f2a01bf74cc5f7ee42ad863f732a37af148444ea2c6088ac12b9681ed30bd6da": "evt_000003_c1bf"
+      }
+    }
+  },
+  "latest_run_id": "run_2026-03-02T02-42-27Z_8069ff",
+  "updated_at_utc": "2026-03-02T03:27:11Z"
+}

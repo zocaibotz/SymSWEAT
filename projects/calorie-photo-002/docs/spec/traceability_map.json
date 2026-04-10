@@ -1,0 +1,118 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "User can upload a photo of food",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "System identifies food items in the uploaded image",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "System estimates calorie content of identified food",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "System estimates sugar content of identified food",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "System saves calorie estimate, sugar estimate, and timestamp to SQLite database",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "System returns summary response with captured data to user",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

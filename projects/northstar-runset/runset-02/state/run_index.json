@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "runset-02",
+  "runs": {
+    "run_2026-02-28T01-51-38Z_824069": {
+      "status": "failed",
+      "started_at_utc": "2026-02-28T08:00:32Z",
+      "ended_at_utc": "2026-02-28T08:00:32Z",
+      "last_seq": 7,
+      "last_event_id": "evt_000007_55ae",
+      "last_node": "zocai",
+      "idempotency_keys": {
+        "run_2026-02-28T01-51-38Z_824069:zocai:enter:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000002_15f2",
+        "run_2026-02-28T01-51-38Z_824069:zocai:route:sdd_specify:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000003_0a92",
+        "run_2026-02-28T01-51-38Z_824069:zocai:exit:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000004_0af7"
+      }
+    }
+  },
+  "latest_run_id": "run_2026-02-28T01-51-38Z_824069",
+  "updated_at_utc": "2026-02-28T08:00:32Z"
+}

@@ -1,0 +1,19 @@
+{
+  "requirements_interview_status": "awaiting_human",
+  "requirements_open_questions": [
+    "What business outcome should this feature achieve?",
+    "What is in-scope and explicitly out-of-scope?",
+    "What are the acceptance criteria we must test?",
+    "Any constraints (security/performance/deadline/tech stack)?"
+  ],
+  "next_agent": "__end__",
+  "project_workspace_path": "projects/hitl-smoke-001",
+  "project_state_version": 1,
+  "run_id": "run_2026-03-03T23-43-49Z_153b39",
+  "run_started": true,
+  "project_id": "hitl-smoke-001",
+  "requirements_revision_reasons": [
+    "missing_requirements"
+  ],
+  "snapshot_kind": "resume"
+}

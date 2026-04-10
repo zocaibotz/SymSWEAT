@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SWEAT Project State",
+  "type": "object",
+  "required": ["schema_version", "state_version", "project_id", "lifecycle", "gates", "artifacts"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "state_version": {"type": "integer", "minimum": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "project_slug": {"type": "string"},
+    "lifecycle": {
+      "type": "object",
+      "required": ["phase", "status", "current_run_id", "last_updated_utc"],
+      "properties": {
+        "phase": {"type": "string"},
+        "status": {"type": "string"},
+        "current_run_id": {"type": ["string", "null"]},
+        "last_updated_utc": {"type": "string"}
+      }
+    },
+    "gates": {
+      "type": "object",
+      "required": ["design_approved", "tdd_ready", "ci_passed", "deployment_approved"],
+      "properties": {
+        "design_approved": {"type": "boolean"},
+        "tdd_ready": {"type": "boolean"},
+        "ci_passed": {"type": "boolean"},
+        "deployment_approved": {"type": "boolean"}
+      }
+    },
+    "artifacts": {"type": "object"}
+  }
+}

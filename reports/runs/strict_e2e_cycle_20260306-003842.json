@@ -1,0 +1,70 @@
+{
+  "timestamp_utc": "2026-03-06T00:38:42Z",
+  "project_id": "calorie-photo-002",
+  "project_dir": "projects/calorie-photo-002",
+  "steps": 12,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "sdd_specify"
+    },
+    {
+      "step": 2,
+      "node": "sdd_specify",
+      "next_agent": "sdd_plan"
+    },
+    {
+      "step": 3,
+      "node": "sdd_plan",
+      "next_agent": "sdd_tasks"
+    },
+    {
+      "step": 4,
+      "node": "sdd_tasks",
+      "next_agent": "architect"
+    },
+    {
+      "step": 5,
+      "node": "architect",
+      "next_agent": "pixel"
+    },
+    {
+      "step": 6,
+      "node": "pixel",
+      "next_agent": "frontman"
+    },
+    {
+      "step": 7,
+      "node": "frontman",
+      "next_agent": "design_approval_gate"
+    },
+    {
+      "step": 8,
+      "node": "design_approval_gate",
+      "next_agent": "tdd_orchestrator"
+    },
+    {
+      "step": 9,
+      "node": "tdd_orchestrator",
+      "next_agent": "unit_test_author"
+    },
+    {
+      "step": 10,
+      "node": "unit_test_author",
+      "next_agent": "integration_test_author"
+    },
+    {
+      "step": 11,
+      "node": "integration_test_author",
+      "next_agent": "playwright_test_author"
+    },
+    {
+      "step": 12,
+      "node": "playwright_test_author",
+      "next_agent": "test_readiness_gate"
+    }
+  ],
+  "final_next_agent": "test_readiness_gate",
+  "run_id": "run_2026-03-04T05-50-27Z_65f680"
+}

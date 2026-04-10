@@ -1,0 +1,12 @@
+{
+  "mode": "rollback_dry_run",
+  "rollback_target": {
+    "SWEAT_V2_ENABLED": "false",
+    "SWEAT_V2_SHADOW_MODE": "true"
+  },
+  "current": {
+    "SWEAT_V2_ENABLED": "false",
+    "SWEAT_V2_SHADOW_MODE": "true"
+  },
+  "instruction": "Set SWEAT_V2_ENABLED=false and restart runtime to revert routing to v1."
+}

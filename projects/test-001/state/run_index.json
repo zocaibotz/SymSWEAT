@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "test-001",
+  "runs": {
+    "run_2026-02-26T09-39-50Z_6e4e45": {
+      "status": "running",
+      "started_at_utc": "2026-02-26T09:39:50Z",
+      "ended_at_utc": null,
+      "last_seq": 19,
+      "last_event_id": "evt_000019_4f50",
+      "last_node": "sdd_specify",
+      "idempotency_keys": {
+        "run_2026-02-26T09-39-50Z_6e4e45:zocai:enter:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000002_0e26",
+        "run_2026-02-26T09-39-50Z_6e4e45:zocai:route:req_master_interview": "evt_000003_f16a",
+        "run_2026-02-26T09-39-50Z_6e4e45:zocai:exit:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000004_faee",
+        "run_2026-02-26T09-39-50Z_6e4e45:zocai:snapshot:1": "evt_000005_97eb",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:enter:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000006_e371",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:route:sdd_specify": "evt_000007_e38a",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:exit:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000008_3f58",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:snapshot:2": "evt_000009_9778",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:enter:6b9bcabfea390b19ae92566f57703a2e54d2d0060d199abd5076fdbfe62706a3": "evt_000010_4c0b",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:route:req_master_interview": "evt_000011_93ff",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:exit:6b9bcabfea390b19ae92566f57703a2e54d2d0060d199abd5076fdbfe62706a3": "evt_000012_4090",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:snapshot:3": "evt_000013_5ecb",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:enter:d5debacbc9d4e236c83e0e74ac92bdc9efca8d10c85ea67840ef887a822f3a22": "evt_000014_3ccd",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:exit:d5debacbc9d4e236c83e0e74ac92bdc9efca8d10c85ea67840ef887a822f3a22": "evt_000015_9dcf",
+        "run_2026-02-26T09-39-50Z_6e4e45:req_master_interview:snapshot:4": "evt_000016_a04f",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:enter:3b629eef53d5189c9384a0cf6befbc4af03b31becf2621a40ae0f74a0310f4eb": "evt_000017_9caa",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:exit:3b629eef53d5189c9384a0cf6befbc4af03b31becf2621a40ae0f74a0310f4eb": "evt_000018_c68a",
+        "run_2026-02-26T09-39-50Z_6e4e45:sdd_specify:snapshot:5": "evt_000019_4f50"
+      }
+    }
+  },
+  "latest_run_id": "run_2026-02-26T09-39-50Z_6e4e45",
+  "updated_at_utc": "2026-02-26T09:39:50Z"
+}

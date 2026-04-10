@@ -1,0 +1,175 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "User can register a new account and log in securely.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "User can only access, edit, or delete tasks they have created (multi-tenancy).",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "User can create a task with a title, description, tags, and a due date.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "User can view a list of their tasks with status indicators (Pending/Completed).",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "User can update any task field, including marking tasks as complete.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "User can permanently delete a task.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-007",
+      "requirement": "Dashboard displays real-time counts for 'Total Tasks', 'Completed', 'Pending', and 'Due Today'.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-007.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-007.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-007.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-008",
+      "requirement": "Application handles errors gracefully (e.g., 404 for missing tasks, 401 for unauthorized access).",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-008.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-008.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-008.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-009",
+      "requirement": "All backend logic, database schema definitions, and frontend UI code reside in one Python file.",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-009.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-009.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-009.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

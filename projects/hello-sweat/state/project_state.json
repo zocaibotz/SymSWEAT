@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "state_version": 1,
+  "project_id": "hello-sweat",
+  "project_slug": "hello-sweat",
+  "lifecycle": {
+    "phase": "unknown",
+    "status": "backfilled",
+    "current_run_id": null,
+    "last_updated_utc": "2026-02-28T04:12:57Z"
+  },
+  "gates": {
+    "design_approved": false,
+    "tdd_ready": false,
+    "ci_passed": false,
+    "deployment_approved": false
+  },
+  "artifacts": {}
+}

@@ -1,0 +1,251 @@
+{
+  "total": 43,
+  "counts": {
+    "ok": 16,
+    "review_loop": 12,
+    "early_end": 14,
+    "non_terminal_max_step": 1
+  },
+  "recent": [
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-080041.json",
+      "project_id": "runset-04",
+      "run_id": "run_2026-02-28T01-55-37Z_cc8923",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-080045.json",
+      "project_id": "runset-05",
+      "run_id": "run_2026-02-28T02-08-29Z_581ddf",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-084320.json",
+      "project_id": "command-center-dashboard",
+      "run_id": "run_2026-02-28T08-40-54Z_3e03d3",
+      "steps": 29,
+      "final_next_agent": "__end__",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-084607.json",
+      "project_id": "command-center-dashboard",
+      "run_id": "run_2026-02-28T08-40-54Z_3e03d3",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-125136.json",
+      "project_id": "command-center-dashboard",
+      "run_id": "run_2026-02-28T08-40-54Z_3e03d3",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260228-145937.json",
+      "project_id": "command-center-dashboard",
+      "run_id": "run_2026-02-28T08-40-54Z_3e03d3",
+      "steps": 160,
+      "final_next_agent": "req_master_interview",
+      "classification": "non_terminal_max_step"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260303-145538.json",
+      "project_id": "nebula-ops-001",
+      "run_id": "run_2026-03-03T14-39-07Z_5b9ea0",
+      "steps": 90,
+      "final_next_agent": "codesmith",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260303-234402.json",
+      "project_id": "hitl-smoke-001",
+      "run_id": "run_2026-03-03T23-43-49Z_153b39",
+      "steps": 2,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260303-234852.json",
+      "project_id": "pulsedesk-e2e-001",
+      "run_id": "run_2026-03-03T23-48-22Z_dd5cf4",
+      "steps": 2,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-001431.json",
+      "project_id": "pulsedesk-e2e-001",
+      "run_id": "run_2026-03-03T23-48-22Z_dd5cf4",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-002225.json",
+      "project_id": "pulsedesk-e2e-002",
+      "run_id": "run_2026-03-04T00-15-23Z_623883",
+      "steps": 30,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-034754.json",
+      "project_id": "config-smoke-001",
+      "run_id": "run_2026-03-04T03-47-37Z_b83bcb",
+      "steps": 2,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-054325.json",
+      "project_id": "calorie-photo-001",
+      "run_id": "run_2026-03-04T05-43-14Z_aed204",
+      "steps": 2,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-055003.json",
+      "project_id": "calorie-photo-001",
+      "run_id": "run_2026-03-04T05-43-14Z_aed204",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-055931.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 29,
+      "final_next_agent": "__end__",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-075132.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-115219.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 3,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-122358.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 3,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-123124.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 2,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-123230.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 3,
+      "final_next_agent": "__end__",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-124824.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 28,
+      "final_next_agent": "__end__",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-142106.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 40,
+      "final_next_agent": "bughunter",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-144537.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-150324.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 40,
+      "final_next_agent": "bughunter",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260304-154432.json",
+      "project_id": "overnight-e2e-01",
+      "run_id": "run_2026-02-27T15-56-30Z_66bd36",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260306-003842.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 12,
+      "final_next_agent": "test_readiness_gate",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260306-004326.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 22,
+      "final_next_agent": "deployer",
+      "classification": "review_loop"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260306-004804.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 1,
+      "final_next_agent": "__end__",
+      "classification": "early_end"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_20260306-005328.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 10,
+      "final_next_agent": "integration_test_author",
+      "classification": "ok"
+    },
+    {
+      "path": "reports/runs/strict_e2e_cycle_latest.json",
+      "project_id": "calorie-photo-002",
+      "run_id": "run_2026-03-04T05-50-27Z_65f680",
+      "steps": 10,
+      "final_next_agent": "integration_test_author",
+      "classification": "ok"
+    }
+  ]
+}

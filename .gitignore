@@ -1,0 +1,35 @@
+# SWEAT mandatory secrets guard
+.env
+.env.*
+!.env.example
+
+# Keys/certs
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+coverage.xml
+
+# Node
+node_modules/
+playwright-report/
+test-results/
+
+# Local integration/runtime data
+n8n_data/
+reports/security/
+
+# Local planning artifacts (do not push)
+plans/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

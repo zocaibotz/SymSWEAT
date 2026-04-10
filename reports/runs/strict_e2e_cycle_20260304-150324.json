@@ -1,0 +1,210 @@
+{
+  "timestamp_utc": "2026-03-04T15:03:24Z",
+  "project_id": "calorie-photo-002",
+  "project_dir": "projects/calorie-photo-002",
+  "steps": 40,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "sdd_specify"
+    },
+    {
+      "step": 2,
+      "node": "sdd_specify",
+      "next_agent": "sdd_plan"
+    },
+    {
+      "step": 3,
+      "node": "sdd_plan",
+      "next_agent": "sdd_tasks"
+    },
+    {
+      "step": 4,
+      "node": "sdd_tasks",
+      "next_agent": "architect"
+    },
+    {
+      "step": 5,
+      "node": "architect",
+      "next_agent": "pixel"
+    },
+    {
+      "step": 6,
+      "node": "pixel",
+      "next_agent": "frontman"
+    },
+    {
+      "step": 7,
+      "node": "frontman",
+      "next_agent": "design_approval_gate"
+    },
+    {
+      "step": 8,
+      "node": "design_approval_gate",
+      "next_agent": "tdd_orchestrator"
+    },
+    {
+      "step": 9,
+      "node": "tdd_orchestrator",
+      "next_agent": "unit_test_author"
+    },
+    {
+      "step": 10,
+      "node": "unit_test_author",
+      "next_agent": "integration_test_author"
+    },
+    {
+      "step": 11,
+      "node": "integration_test_author",
+      "next_agent": "playwright_test_author"
+    },
+    {
+      "step": 12,
+      "node": "playwright_test_author",
+      "next_agent": "test_readiness_gate"
+    },
+    {
+      "step": 13,
+      "node": "test_readiness_gate",
+      "next_agent": "github_bootstrap"
+    },
+    {
+      "step": 14,
+      "node": "github_bootstrap",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 15,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 16,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 17,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 18,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 19,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 20,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 21,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 22,
+      "node": "pipeline",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 23,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 24,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 25,
+      "node": "pipeline",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 26,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 27,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 28,
+      "node": "pipeline",
+      "next_agent": "bughunter"
+    },
+    {
+      "step": 29,
+      "node": "bughunter",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 30,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 31,
+      "node": "pipeline",
+      "next_agent": "bughunter"
+    },
+    {
+      "step": 32,
+      "node": "bughunter",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 33,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 34,
+      "node": "pipeline",
+      "next_agent": "bughunter"
+    },
+    {
+      "step": 35,
+      "node": "bughunter",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 36,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 37,
+      "node": "pipeline",
+      "next_agent": "bughunter"
+    },
+    {
+      "step": 38,
+      "node": "bughunter",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 39,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 40,
+      "node": "pipeline",
+      "next_agent": "bughunter"
+    }
+  ],
+  "final_next_agent": "bughunter",
+  "run_id": "run_2026-03-04T05-50-27Z_65f680"
+}

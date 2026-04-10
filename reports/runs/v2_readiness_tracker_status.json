@@ -1,0 +1,459 @@
+{
+  "updated_utc": "2026-03-22T17:28:37Z",
+  "source_checklist": "docs/SWEAT_V2_PRODUCTION_READINESS_CHECKLIST.md",
+  "summary": {
+    "complete": 5,
+    "in_progress": 20,
+    "blocked": 6,
+    "not_started": 19
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Runtime Reality (core)",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Complete direct worker bindings for all stages",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/bindings.py",
+            "src/sweat_v2/graph/planning_graph.py",
+            "src/sweat_v2/graph/governance_graph.py"
+          ]
+        },
+        {
+          "task": "Remove placeholder transitions; drive stage flow from real outputs",
+          "status": "blocked",
+          "evidence": [
+            "src/sweat_v2/graph/supervisor.py"
+          ]
+        },
+        {
+          "task": "Deterministic routing based on real gate/state fields",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/bridge.py"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "State & Contract Hardening",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Finalize canonical v2 schema + schema versioning policy",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/state.py"
+          ]
+        },
+        {
+          "task": "Add migration handlers for schema evolution",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Enforce strict node-boundary contracts (ingress + egress)",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/stage_contracts.py",
+            "src/sweat_v2/contracts.py"
+          ]
+        },
+        {
+          "task": "Backward-compatible adapter for legacy ProjectState",
+          "status": "complete",
+          "evidence": [
+            "src/sweat_v2/bindings.py"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Reliability & Safety",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Idempotency keys for side-effecting actions (Linear/GitHub/deploy)",
+          "status": "not_started",
+          "evidence": [
+            "src/main.py"
+          ]
+        },
+        {
+          "task": "Retry policy with backoff + max-attempt caps",
+          "status": "complete",
+          "evidence": [
+            "src/sweat_v2/retry_policy.py"
+          ]
+        },
+        {
+          "task": "Circuit breaker for repeated external failures",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Dead-letter / failed-run quarantine path",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Human intervention checkpoints for high-risk failure classes",
+          "status": "in_progress",
+          "evidence": [
+            "src/main.py"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Quality Gates",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Enforce pre-completion evidence (tests executed + passed)",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/harness/middleware/pre_completion_checklist.py",
+            "src/sweat_v2/stage_contracts.py"
+          ]
+        },
+        {
+          "task": "Enforce acceptance-criteria coverage threshold",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/harness/middleware/pre_completion_checklist.py"
+          ]
+        },
+        {
+          "task": "Enforce policy checks before terminal state",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/harness/middleware/policy_guard.py"
+          ]
+        },
+        {
+          "task": "Enforce artifact sync to SWEAT-private before completion",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/bridge.py",
+            "src/sweat_v2/harness/middleware/policy_guard.py"
+          ]
+        },
+        {
+          "task": "Add false-complete detector before done",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/e2e_classifier.py",
+            "scripts/sweat_v2_e2e_failure_report.py",
+            "reports/runs/v2_e2e_failure_report.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Observability & Ops",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "End-to-end stage trace correlation IDs",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/shadow_runner.py",
+            "reports/runs/v2_shadow_report.jsonl"
+          ]
+        },
+        {
+          "task": "Tool-call telemetry (latency/cost/error/type)",
+          "status": "in_progress",
+          "evidence": [
+            "src/main.py"
+          ]
+        },
+        {
+          "task": "Dashboard for success/failure/latency/cost/policy drift",
+          "status": "not_started",
+          "evidence": [
+            "docs/SWEAT_PROJECT1_MONITORING_DASHBOARD.md"
+          ]
+        },
+        {
+          "task": "Incident runbook (triage/mitigate/recover)",
+          "status": "in_progress",
+          "evidence": [
+            "docs/SWEAT_PRODUCTION_OPERATOR_RUNBOOK.md"
+          ]
+        },
+        {
+          "task": "Replay + snapshot inspection workflow",
+          "status": "not_started",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Evaluation & Promotion System",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Finalize SWEAT benchmark suite",
+          "status": "in_progress",
+          "evidence": [
+            "scripts/northstar_stability_runset.py",
+            "src/sweat_v2/evals.py"
+          ]
+        },
+        {
+          "task": "A/B compare v2 vs v1 on fixed runsets",
+          "status": "not_started",
+          "evidence": [
+            "reports/runs/v2_shadow_report.jsonl"
+          ]
+        },
+        {
+          "task": "Promotion gate enforced in CI",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/promotion_gate.py",
+            "scripts/sweat_v2_promotion_evidence_gate.py"
+          ]
+        },
+        {
+          "task": "Regression thresholds encoded + blocking",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/promotion_gate.py"
+          ]
+        },
+        {
+          "task": "Weekly eval report automation",
+          "status": "complete",
+          "evidence": [
+            "scripts/sweat_v2_shadow_weekly_report.py",
+            "reports/runs/v2_shadow_weekly_report.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Security & Governance",
+      "overall": "not_started",
+      "tasks": [
+        {
+          "task": "Secret redaction coverage in logs/events/reports",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Credential scope review (least privilege)",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Policy audit trail completeness (who/what/when)",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Blocklist/allowlist enforcement tests",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Security signoff checklist per release",
+          "status": "not_started",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Release Engineering",
+      "overall": "in_progress",
+      "tasks": [
+        {
+          "task": "Shadow \u2192 partial cutover \u2192 full cutover rollout controls",
+          "status": "in_progress",
+          "evidence": [
+            "docs/SWEAT_V2_MIGRATION_PLAN.md",
+            "src/sweat_v2/config.py",
+            "reports/runs/v2_cutover_dry_run.json"
+          ]
+        },
+        {
+          "task": "One-command rollback validated",
+          "status": "complete",
+          "evidence": [
+            "scripts/sweat_v2_rollback_dry_run.py",
+            "reports/runs/v2_rollback_dry_run.json"
+          ]
+        },
+        {
+          "task": "Rollback drill under load",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Versioned migration notes per release",
+          "status": "in_progress",
+          "evidence": [
+            "docs/SWEAT_V2_MIGRATION_PLAN.md"
+          ]
+        },
+        {
+          "task": "Release checklist + signoff artifact",
+          "status": "in_progress",
+          "evidence": [
+            "reports/runs/milestone_signoff.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Productization Layer",
+      "overall": "not_started",
+      "tasks": [
+        {
+          "task": "Operator config guide (model policy, budgets, gates, strictness)",
+          "status": "not_started",
+          "evidence": [
+            "docs/ENVIRONMENT_VARIABLES.md"
+          ]
+        },
+        {
+          "task": "Admin controls (pause/resume/kill/replay)",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Troubleshooting FAQ + known failure modes",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Onboarding guide for new operators",
+          "status": "not_started",
+          "evidence": []
+        },
+        {
+          "task": "Example production config bundle",
+          "status": "in_progress",
+          "evidence": [
+            "src/sweat_v2/configs/feature_flags.yaml",
+            ".env.example"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Proven Readiness Criteria (Go/No-Go)",
+      "overall": "blocked",
+      "tasks": [
+        {
+          "task": "7-day shadow run completed",
+          "status": "blocked",
+          "evidence": [
+            "reports/runs/v2_shadow_weekly_report.json"
+          ]
+        },
+        {
+          "task": ">= v1 success rate on E2E workloads",
+          "status": "blocked",
+          "evidence": [
+            "reports/runs/v2_e2e_failure_report.json"
+          ]
+        },
+        {
+          "task": ">= 20% reduction in false-complete outcomes",
+          "status": "blocked",
+          "evidence": [
+            "reports/runs/v2_e2e_failure_report.json"
+          ]
+        },
+        {
+          "task": ">= 15% first-pass CI improvement (target)",
+          "status": "blocked",
+          "evidence": []
+        },
+        {
+          "task": "Policy compliance 100%",
+          "status": "blocked",
+          "evidence": []
+        },
+        {
+          "task": "Rollback tested successfully",
+          "status": "complete",
+          "evidence": [
+            "reports/runs/v2_rollback_dry_run.json"
+          ]
+        },
+        {
+          "task": "Final production readiness report published",
+          "status": "not_started",
+          "evidence": []
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "id": "B1",
+      "title": "Insufficient shadow evidence for promotion",
+      "evidence": "reports/runs/v2_promotion_evidence_gate.json",
+      "detail": "shadow_rows=1 (<20), ready=false"
+    },
+    {
+      "id": "B2",
+      "title": "Cutover dry-run not ready",
+      "evidence": "reports/runs/v2_cutover_dry_run.json",
+      "detail": "enabled_is_true=false, shadow_is_false=false"
+    },
+    {
+      "id": "B3",
+      "title": "E2E instability still high",
+      "evidence": "reports/runs/v2_e2e_failure_report.json",
+      "detail": "review_loop=12, early_end=14, non_terminal_max_step=1 (total=43)"
+    },
+    {
+      "id": "B4",
+      "title": "Supervisor transition logic still scaffolded",
+      "evidence": "src/sweat_v2/graph/supervisor.py",
+      "detail": "current flow increments stage instead of worker-output-driven transitions"
+    }
+  ],
+  "next_24h_plan": [
+    "Implement outcome-driven stage transitions in v2 supervisor and wire to worker results.",
+    "Run targeted shadow batches to lift v2_shadow_report.jsonl to >=20 records.",
+    "Convert pre-completion gate violations into hard terminal-state blocking checks.",
+    "Add v2 incident/replay runbook doc and link it in release readiness artifacts.",
+    "Regenerate evidence artifacts: v2_e2e_failure_report, v2_shadow_weekly_report, v2_promotion_evidence_gate."
+  ],
+  "delta_since_previous_tracker": {
+    "previous_updated_utc": "2026-03-22T17:14:00Z",
+    "checked_at_utc": "2026-03-22T17:28:37Z",
+    "changed_files": [
+      "docs/SWEAT_V2_READINESS_TRACKER_STATUS.md",
+      "reports/runs/v2_readiness_tracker_status.json"
+    ],
+    "changed_reports": [],
+    "readiness_score": {
+      "previous_pct": 10.0,
+      "current_pct": 10.0,
+      "delta_pct": 0.0,
+      "basis": "5/50 complete tasks from summary"
+    },
+    "blockers_changed": false,
+    "blockers_note": "No blocker evidence files changed; B1-B4 remain active.",
+    "next_best_action": "Regenerate v2_e2e_failure_report, v2_shadow_weekly_report, and v2_promotion_evidence_gate, then run controlled shadow batches to reach >=20 shadow rows before reassessing promotion/cutover readiness."
+  }
+}

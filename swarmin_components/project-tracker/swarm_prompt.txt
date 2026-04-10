@@ -1,0 +1,17 @@
+Run swarm:
+Requirement: Backend API - Decisions & Problems - Targeted Codex remediation after stalled retries (isolated run)
+Mode: build
+Constraints:
+  - MANDATORY PIPELINE: SDD -> TDD -> Implement -> Security Scan -> Critic Review.
+  - PLANNER: MUST generate `docs/spec/ZOC-91.md`.
+  - CODER: MUST write failing tests first (Red), then passing tests (Green), with test logs in output.
+  - SECURITY: MUST run local SAST/dependency checks and output `reports/security_scan.txt`; remediate High/Critical findings.
+  - CWD: Strictly locked to /home/claw-admin/.openclaw/workspace/projects/symphony/ZOC-91/repo.
+  - EXECUTION DISCIPLINE: Do the actual file edits first. Do NOT return status-only messages like "started"/"launched" without producing artifacts.
+Hard Output Contract (required before completion):
+  1) `docs/spec/ZOC-91.md`
+  2) `reports/security_scan.txt`
+  3) For Architect tickets: `docs/architecture/SYSTEM_DESIGN.md` and `docs/architecture/API_CONTRACTS.md`
+  4) Git commits on branch `ZOC-91`
+  5) PR creation via `gh pr create` and PR URL
+  - If unable to satisfy all required outputs, STOP and return explicit failure reason.

@@ -1,0 +1,22 @@
+name: State Schema Validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate_state_schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Bootstrap runtime
+        run: |
+          bash scripts/ci_bootstrap.sh
+      - name: Validate state schema across discovered projects
+        run: |
+          python scripts/validate_all_states.py --root projects

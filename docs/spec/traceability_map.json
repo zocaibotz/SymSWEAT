@@ -1,0 +1,270 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "Dashboard displays a list of all SWEAT projects with status indicators (in-progress, completed)",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "Each project entry shows project name, current flow stage, and last updated timestamp",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "Clicking a project navigates to its dedicated detail page",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "Detail page top section displays a visual flow indicator showing all stages from Requirement Master to Code Smith",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "Current stage is highlighted in the flow indicator",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "Detail page middle section displays detailed information about the current active stage",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-007",
+      "requirement": "Detail page right sidebar displays real-time statistics including: total tasks, completed tasks, in-progress tasks, open Linear issues, closed Linear issues",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-007.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-007.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-007.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-008",
+      "requirement": "Detail page provides instant access to all generated artefacts: Requirements文档, Specification文档, Plans, Tasks, Linear issues",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-008.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-008.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-008.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-009",
+      "requirement": "Artefacts are categorized and clickable with direct links or preview capability",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-009.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-009.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-009.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-010",
+      "requirement": "Dashboard shows project progress percentage based on completed stages",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-010.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-010.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-010.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-011",
+      "requirement": "Completed projects are visually distinguished from in-progress projects",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-011.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-011.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-011.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-012",
+      "requirement": "All page loads complete within 2 seconds",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-012.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-012.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-012.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-013",
+      "requirement": "Dashboard is responsive and usable on desktop (1920x1080 minimum)",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-013.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-013.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-013.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-014",
+      "requirement": "Professional, command-center aesthetic with dark mode option",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-014.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-014.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-014.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

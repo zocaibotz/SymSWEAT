@@ -1,0 +1,1335 @@
+2026-02-23 06:27:31,085 - SWEAT - INFO - ScrumLord: planning sprint.
+2026-02-23 06:27:51,488 - SWEAT - INFO - ScrumLord: planning sprint.
+2026-02-23 08:11:31,589 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-23 08:11:31,748 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-23 11:52:08,372 - SWEAT - INFO - Architech: designing system.
+2026-02-23 11:54:00,126 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,186 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,189 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,247 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,249 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,308 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,310 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,374 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,377 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,445 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,447 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,507 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,508 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,570 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,573 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,631 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,633 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,690 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,692 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,739 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,741 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,794 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,795 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,862 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,863 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,908 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,909 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:00,978 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:00,980 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,042 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,046 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,107 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,109 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,169 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,171 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,241 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,244 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,303 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,305 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,359 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,361 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,410 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,413 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,471 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,473 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,535 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,538 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,603 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,606 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,682 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,685 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,742 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,745 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,799 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 11:54:01,801 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 11:54:01,868 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-23 12:01:24,142 - SWEAT - INFO - Architech: designing system.
+2026-02-23 12:03:19,100 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:04:04,150 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:04:04,157 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:04:49,215 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:04:49,220 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:05:34,272 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:05:34,274 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:06:19,314 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:06:19,318 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:07:04,363 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:07:04,365 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:07:49,415 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:08:34,471 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:09:19,527 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:52:19,297 - SWEAT - INFO - Architech: designing system.
+2026-02-23 12:54:11,562 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:54:56,624 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:54:56,626 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:55:41,674 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:55:41,676 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:56:26,719 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:56:26,727 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 12:57:11,778 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 12:57:11,782 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:57:56,826 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:58:41,878 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 12:59:26,925 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:00:11,990 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:00:57,053 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:01:42,103 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:11:53,345 - SWEAT - INFO - Architech: designing system.
+2026-02-23 13:13:26,661 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:14:10,214 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:14:55,265 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:15:40,329 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 13:15:40,331 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:16:25,379 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 13:16:25,384 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:17:10,458 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-23 13:17:10,465 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:17:55,541 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:18:40,609 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:19:25,671 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 13:19:57,566 - SWEAT - INFO - Architech: designing system.
+2026-02-23 13:49:56,552 - SWEAT - INFO - Architech: designing system.
+2026-02-23 13:50:50,579 - SWEAT - INFO - Architech: designing system.
+2026-02-23 13:52:47,173 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:53:00,803 - SWEAT - WARNING - CodeSmith tool parsing failed: Empty input text.
+2026-02-23 13:53:00,805 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 13:53:24,222 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: Design approved. Proceeding to TDD stage.
+
+TDD orchestrator initialized. Starting unit test authorin...
+2026-02-23 13:53:24,227 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:41:36,379 - SWEAT - INFO - Architech: designing system.
+2026-02-23 14:42:41,175 - SWEAT - INFO - Architech: designing system.
+2026-02-23 14:43:46,453 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 14:44:09,626 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:24,373 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 14:44:36,918 - SWEAT - WARNING - CodeSmith tool parsing failed: Tool call missing valid 'tool' string.
+2026-02-23 14:44:36,921 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 14:44:45,797 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Let me try again with the correct format.
+</think>
+
+<minimax:tool_call>
+<invoke name="run_co...
+2026-02-23 14:44:45,802 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:49,851 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:55,098 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:56,523 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:58,148 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:44:59,839 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:46:05,256 - SWEAT - INFO - Architech: designing system.
+2026-02-23 14:47:13,210 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 14:47:19,752 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Now I need to implement the feature. Let me check the current directory structure first.
+</t...
+2026-02-23 14:47:19,755 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-23 14:47:28,917 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Let me check the directory structure.
+</think>
+
+<minimax:tool_call>
+<invoke name="filesystem...
+2026-02-23 14:47:28,921 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:47:43,581 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-23 14:47:43,587 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:47:56,444 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-23 14:47:56,450 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-23 14:48:10,661 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:12:35,881 - SWEAT - INFO - Architech: designing system.
+2026-02-24 00:13:39,601 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 00:13:44,715 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to build a tiny todo API with add/list/complete endpoints. I need to imple...
+2026-02-24 00:13:44,718 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 00:13:49,296 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to build a tiny todo API with add/list/complete endpoints. I need to imple...
+2026-02-24 00:13:49,301 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:13:53,921 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:13:53,927 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:13:57,325 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:13:57,332 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:14:05,364 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:14:05,369 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:14:07,078 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:14:07,085 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:14:16,336 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:15:40,292 - SWEAT - INFO - Architech: designing system.
+2026-02-24 00:17:25,195 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 00:17:49,033 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:17:53,399 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 00:17:55,252 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Good, I've created the test file. Now let me create the requirements.txt and any other neces...
+2026-02-24 00:17:55,255 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 00:17:57,311 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+It seems the JSON parsing failed. Let me try again with a simpler approach. I'll just create...
+2026-02-24 00:17:57,314 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 00:17:59,256 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 00:27:50,306 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 01:11:32,231 - SWEAT - INFO - Architech: designing system.
+2026-02-24 01:13:34,685 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:13:36,523 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to build a TODO API. Let me start by checking the current directory struct...
+2026-02-24 01:13:36,525 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:13:39,938 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Let me just check the current directory.
+</think>
+
+<minimax:tool_call>
+<invoke name="filesys...
+2026-02-24 01:13:39,942 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:13:46,934 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 01:13:59,645 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:14:01,588 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 01:14:14,585 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:14:26,839 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 01:50:23,304 - SWEAT - INFO - Architech: designing system.
+2026-02-24 01:51:12,454 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:51:50,123 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:52:16,536 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:52:50,335 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:52:56,009 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:53:37,301 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:54:24,013 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:54:29,883 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:54:54,175 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:55:23,379 - SWEAT - WARNING - CodeSmith tool parsing failed: Tool 'bash' is not allowed in this context.
+2026-02-24 01:55:23,382 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:55:28,185 - SWEAT - WARNING - CodeSmith tool parsing failed: Tool call must be a JSON object.
+2026-02-24 01:55:28,191 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:56:11,293 - SWEAT - INFO - Architech: designing system.
+2026-02-24 01:57:28,238 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 01:57:41,155 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 01:57:45,391 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:19:36,571 - SWEAT - INFO - Architech: designing system.
+2026-02-24 04:21:01,502 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 04:21:05,676 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to build a tiny TODO API with add/list/complete endpoints. Let me break th...
+2026-02-24 04:21:05,679 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 04:21:13,066 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to generate a design specification for a TODO API in JSON format. I need t...
+2026-02-24 04:21:13,071 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 04:21:20,318 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:21:32,855 - SWEAT - INFO - N8N: Triggering webhook http://localhost:5678/webhook/sweat-agent (attempt 1/3)...
+2026-02-24 04:21:32,913 - SWEAT - INFO - N8N: Webhook successful.
+2026-02-24 04:21:32,919 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:21:46,160 - SWEAT - INFO - N8N: Triggering webhook http://localhost:5678/webhook/sweat-agent (attempt 1/3)...
+2026-02-24 04:21:46,206 - SWEAT - INFO - N8N: Webhook successful.
+2026-02-24 04:21:46,209 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:21:58,704 - SWEAT - INFO - N8N: Triggering webhook http://localhost:5678/webhook/sweat-agent (attempt 1/3)...
+2026-02-24 04:21:58,751 - SWEAT - INFO - N8N: Webhook successful.
+2026-02-24 04:21:58,757 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:22:10,694 - SWEAT - INFO - N8N: Triggering webhook http://localhost:5678/webhook/sweat-agent (attempt 1/3)...
+2026-02-24 04:22:10,756 - SWEAT - INFO - N8N: Webhook successful.
+2026-02-24 04:22:10,768 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:32:59,461 - SWEAT - INFO - Architech: designing system.
+2026-02-24 04:34:30,188 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 04:34:35,148 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+The user wants me to build a tiny todo API with add/list/complete endpoints. Based on the co...
+2026-02-24 04:34:35,151 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-24 04:34:45,312 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: <think>
+Let me try again with a simpler approach. I'll use the write_file tool correctly by providin...
+2026-02-24 04:34:45,318 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-24 04:34:57,809 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-24 04:35:19,689 - SWEAT - INFO - N8N: Triggering webhook http://localhost:5678/webhook/sweat-agent (attempt 1/3)...
+2026-02-24 04:35:19,736 - SWEAT - INFO - N8N: Webhook successful.
+2026-02-25 16:47:23,623 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:48:08,732 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-25 16:48:08,739 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:48:53,799 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-25 16:48:53,806 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:49:26,323 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will explore the codebase to understand any existing templates or standards for requirement gather...
+2026-02-25 16:49:26,327 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:50:11,385 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-25 16:50:11,406 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:50:54,977 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will begin by researching the project's documentation to understand the established requirements g...
+2026-02-25 16:50:54,991 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:51:40,080 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-25 16:51:40,091 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:52:07,830 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will begin by researching the existing project structure and any available templates or tools in t...
+2026-02-25 16:52:07,841 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:52:29,400 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To build a production-ready MVP for the **Personal Habit Tracker**, I need to refine the technical s...
+2026-02-25 16:52:29,408 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-25 16:53:28,759 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-25 16:53:28,967 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-25 16:53:29,244 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 01:17:07,179 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 01:17:07,337 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:35,145 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:35,305 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:35,550 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:35,705 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:35,869 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:36,027 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:36,486 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:36,647 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:36,803 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:36,952 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:37,116 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-26 02:18:37,284 - SWEAT - ERROR - Linear API error: 400 Client Error: Bad Request for url: https://api.linear.app/graphql
+2026-02-27 15:32:00,795 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-27 15:32:32,698 - SWEAT - INFO - Architech: designing system.
+2026-02-27 15:41:00,938 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-27 15:41:28,348 - SWEAT - INFO - Architech: designing system.
+2026-02-27 15:52:56,983 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-27 15:53:24,395 - SWEAT - INFO - Architech: designing system.
+2026-02-27 15:55:18,296 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:55:18,483 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:55:18,501 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:55:18,587 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:55:18,602 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:55:18,709 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:55:18,730 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:55:18,807 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:55:18,830 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:55:18,896 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:55:18,915 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,072 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,209 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,327 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,429 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,591 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,707 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,850 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:19,963 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:55:20,097 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:56:30,227 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-27 15:56:59,048 - SWEAT - INFO - Architech: designing system.
+2026-02-27 15:58:46,526 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:58:46,627 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:58:46,648 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:58:46,742 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:58:46,756 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:58:46,819 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:58:46,831 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:58:46,901 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:58:46,912 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-27 15:58:46,975 - SWEAT - WARNING - CodeSmith tool parsing failed: Could not extract valid JSON from response: The gh-copilot extension has been deprecated in favor of the newer GitHub Copilot CLI.
+
+For more inf...
+2026-02-27 15:58:46,998 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:58:47,127 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-27 15:58:47,151 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:58:47,282 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-27 15:58:47,314 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-27 15:58:47,436 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:45:49,309 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:46:27,063 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Should the app be CLI-based, a Web interface (e.g., Streamlit/FastAPI), or a REST API only?
+Should t...
+2026-02-28 01:46:27,069 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:46:47,586 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a comprehensive requirement specification for the "Titan Genesis" note-taking app, please...
+2026-02-28 01:46:47,596 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:47:16,191 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a comprehensive set of requirements and testable acceptance criteria for your note-taking...
+2026-02-28 01:47:16,198 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:47:33,659 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your note-taking MVP, please clarify the following:
+
+1. **Au...
+2026-02-28 01:47:33,670 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:47:51,661 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide precise and testable acceptance criteria for your Note-Taking MVP, please clarify the fol...
+2026-02-28 01:47:51,665 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:48:09,651 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary details for the SDD (Software Design Document), please answer the following ...
+2026-02-28 01:48:09,666 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:48:28,274 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for the note-taking MVP, please answer the following questions:...
+2026-02-28 01:48:28,286 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:48:49,915 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for the "Titan Genesis" note-taking MVP, please clarify the follo...
+2026-02-28 01:48:49,919 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:49:09,369 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To define the MVP for the note-taking app, please clarify:
+
+1. **Authentication**: Is basic username...
+2026-02-28 01:49:09,377 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:49:26,779 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for **Titan Genesis**, please answer the following questions:
+
+1....
+2026-02-28 01:49:26,793 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:49:50,535 - SWEAT - INFO - Architech: designing system.
+2026-02-28 01:51:32,904 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:51:32,979 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:51:32,985 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:51:33,056 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:51:33,068 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:51:33,157 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:51:33,164 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:51:33,246 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:51:33,252 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:51:33,328 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:51:33,349 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:51:33,477 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:51:33,488 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:51:33,624 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:51:33,636 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:51:33,754 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:51:38,543 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:51:55,954 - SWEAT - INFO - Architech: designing system.
+2026-02-28 01:53:19,159 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:53:19,265 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:53:19,271 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:53:19,354 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:53:19,363 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:53:19,444 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:53:19,450 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:53:19,543 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:53:19,549 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:53:19,638 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:53:19,655 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:53:19,799 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:53:19,828 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:53:19,960 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:53:19,971 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:53:20,105 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:53:24,749 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:53:42,359 - SWEAT - INFO - Architech: designing system.
+2026-02-28 01:55:32,114 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:55:32,201 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:55:32,213 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:55:32,275 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:55:32,280 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:55:32,346 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:55:32,361 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:55:32,449 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:55:32,455 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 01:55:32,536 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 01:55:32,546 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:55:32,688 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:55:32,711 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:55:32,835 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:55:32,854 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 01:55:32,988 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 01:55:37,717 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:55:58,061 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: What specific columns should the board include by default (e.g., To Do, In Progress, Done)?
+Should t...
+2026-02-28 01:55:58,074 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:56:35,991 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I'll provide a set of questions to gather the necessary details for the project task board.
+
+To move...
+2026-02-28 01:56:36,000 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:57:08,800 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To refine the requirements for your task board, please answer the following clarification questions:...
+2026-02-28 01:57:08,810 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:57:26,283 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for the **Lightweight Project Task Board**, please answer the fo...
+2026-02-28 01:57:26,288 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:57:42,298 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification, I need a few clarifications:
+
+1. **Persistence**: Should tasks ...
+2026-02-28 01:57:42,304 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:58:02,047 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: 1. Should this task board be integrated into the existing TaskMaster MVP architecture (using the RES...
+2026-02-28 01:58:02,056 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:58:23,886 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I'll start by gathering more details for the task board project. To provide the full specification, ...
+2026-02-28 01:58:23,895 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:58:49,348 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To proceed with the "lightweight project task board" project, I need to clarify a few details to ens...
+2026-02-28 01:58:49,363 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:59:10,015 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a production-grade System Design Document for your task board, I need a few clarification...
+2026-02-28 01:59:10,024 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:59:27,851 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for the "Titan Genesis" task board, please clarify:
+
+1. **Tech St...
+2026-02-28 01:59:27,856 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 01:59:45,837 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for "Titan Genesis," please clarify:
+
+1. **UI Framework:** Shoul...
+2026-02-28 01:59:45,845 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:00:05,361 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for the Titan Genesis Task Board, I need a few clarifications:
+
+...
+2026-02-28 02:00:05,368 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:00:27,347 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for Titan Genesis, please answer the following questions:
+
+1. Sh...
+2026-02-28 02:00:27,357 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:00:47,287 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary details for the **Titan Genesis** project task board, please answer the foll...
+2026-02-28 02:00:47,303 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:01:13,343 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will start by examining the project's documentation to understand the existing architectural patte...
+2026-02-28 02:01:13,352 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:01:32,637 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your project task board, I need a few more details:
+
+1. **Co...
+2026-02-28 02:01:32,641 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:01:54,217 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for the project task board, please clarify the following:
+
+1. **...
+2026-02-28 02:01:54,226 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:02:10,789 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a comprehensive specification for the **Lightweight Project Task Board**, please clarify ...
+2026-02-28 02:02:10,804 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:02:28,185 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for the **Titan Genesis** task board, I need to clarify a few de...
+2026-02-28 02:02:28,191 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:02:46,303 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for Titan Genesis, please answer the following:
+
+1. **Tech Stack...
+2026-02-28 02:02:46,311 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:03:18,074 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will search for "ReqMaster" in the codebase to understand its role and the expected format for req...
+2026-02-28 02:03:18,086 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:04:03,142 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:04:03,150 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:04:26,365 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for the TaskMaster Board, I need to clarify a few functional requ...
+2026-02-28 02:04:26,377 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:04:45,321 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your lightweight project task board, I need a few more detai...
+2026-02-28 02:04:45,328 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:05:14,823 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer the following interview questions:
+
+1. **Appli...
+2026-02-28 02:05:14,837 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:05:33,263 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide the required JSON specification for Titan Genesis, please clarify:
+
+1. **Framework**: Sin...
+2026-02-28 02:05:33,270 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:05:51,079 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for the "Titan Genesis" task board, please provide details on t...
+2026-02-28 02:05:51,095 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:06:33,937 - SWEAT - INFO - Architech: designing system.
+2026-02-28 02:08:23,489 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:08:23,589 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:08:23,599 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:08:23,681 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:08:23,691 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:08:23,778 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:08:23,789 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:08:23,872 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:08:23,882 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:08:23,974 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:08:23,999 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:08:24,147 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 02:08:24,162 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:08:24,306 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 02:08:24,320 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:08:24,444 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 02:08:29,188 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:08:49,809 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I have a few quick clarifi...
+2026-02-28 02:08:49,822 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:09:12,102 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for your Markdown knowledge base app, I need to clarify a few key...
+2026-02-28 02:09:12,116 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:09:28,814 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for your personal knowledge base app, please answer the followi...
+2026-02-28 02:09:28,825 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:09:46,480 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I need a few clarification...
+2026-02-28 02:09:46,485 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:10:05,222 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, please clarify the followi...
+2026-02-28 02:10:05,235 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:10:41,795 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will start by researching the existing documentation and requirements gathering process in the `SW...
+2026-02-28 02:10:41,803 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:11:26,860 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:11:26,864 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:11:44,517 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I need a few more details:...
+2026-02-28 02:11:44,541 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:12:04,075 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for your personal knowledge base application, please provide de...
+2026-02-28 02:12:04,092 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:12:49,186 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:12:49,192 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:13:06,915 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise Software Design Description (SDD) for your personal knowledge base, I need a fe...
+2026-02-28 02:13:06,927 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:13:24,542 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for Titan Genesis, please clarify the following:
+
+1. Should the ...
+2026-02-28 02:13:24,552 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:13:42,709 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete Software Design Description (SDD) and acceptance criteria for your Knowledge B...
+2026-02-28 02:13:42,717 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:13:59,594 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for the **Personal Knowledge Base App**, please answer the foll...
+2026-02-28 02:13:59,609 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:14:17,400 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To proceed with the **Personal Knowledge Base** implementation, please answer these brief questions:...
+2026-02-28 02:14:17,405 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:14:34,255 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for your personal knowledge base app, please clarify the followin...
+2026-02-28 02:14:34,269 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:15:08,187 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will read the `SPEC.md` file to see if there are any existing requirements or context for "Titan G...
+2026-02-28 02:15:08,197 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:15:23,901 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a precise specification for your Personal Knowledge Base app, please clarify:
+
+1. **Stora...
+2026-02-28 02:15:23,918 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:16:09,006 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:16:09,015 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:16:28,313 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your Personal Knowledge Base app, I need a few more details:...
+2026-02-28 02:16:28,326 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:17:03,994 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To move forward with the **Personal Knowledge Base** specification, I need to clarify a few details:...
+2026-02-28 02:17:04,005 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:17:20,673 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To proceed with the system design, I need a few clarifications:
+
+1. **Interface**: Should this be a ...
+2026-02-28 02:17:20,678 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:18:05,742 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:18:05,751 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:18:24,006 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your Personal Knowledge Base, I need to clarify a few functi...
+2026-02-28 02:18:24,030 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:19:09,129 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:19:09,140 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:19:29,040 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification, I need a few more details:
+
+1. Should the app have a CLI interf...
+2026-02-28 02:19:29,054 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:20:14,138 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:20:14,144 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:20:59,220 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:20:59,233 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:21:15,903 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary details for the Software Design Document (SDD), please answer the following ...
+2026-02-28 02:21:15,909 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:21:32,755 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for **Titan Genesis**, please answer these 4 questions:
+
+1. **In...
+2026-02-28 02:21:32,763 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:21:50,319 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I need a few more details:...
+2026-02-28 02:21:50,331 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:22:20,544 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will search the codebase for any existing references to "Titan Genesis" or "ReqMaster" to ensure I...
+2026-02-28 02:22:20,552 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:22:57,820 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I need more detail to define the final requirements for **Titan Genesis**. Please answer these conci...
+2026-02-28 02:22:57,830 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:23:16,542 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I need to clarify a few de...
+2026-02-28 02:23:16,548 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:24:01,635 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Error calling Gemini CLI: timed out after 45s...
+2026-02-28 02:24:01,646 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:24:20,008 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for "Titan Genesis," please provide details on the following:
+
+...
+2026-02-28 02:24:20,020 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:24:41,264 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base, please answer the following:
+
+...
+2026-02-28 02:24:41,271 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:24:59,286 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for the **Titan Genesis** personal knowledge base, I need a few ...
+2026-02-28 02:24:59,296 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:25:15,999 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To proceed with the **Titan Genesis** project, I need to clarify the following:
+
+1. **Platform:** Is...
+2026-02-28 02:25:16,019 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:25:32,901 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a complete specification for your personal knowledge base app, I need to clarify a few de...
+2026-02-28 02:25:32,917 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:26:03,330 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I will start by examining the current `SPEC.md` and `TODO.md` to understand the current state of the...
+2026-02-28 02:26:03,341 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:26:26,829 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To gather the necessary requirements for the "Titan Genesis" Personal Knowledge Base app, please pro...
+2026-02-28 02:26:26,845 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:26:45,032 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a comprehensive System Design Document (SDD), I need to clarify a few details:
+
+1. **Plat...
+2026-02-28 02:26:45,039 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:27:04,382 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To provide a comprehensive design, I need a few clarifications:
+
+1. **Platform**: Is this a web-base...
+2026-02-28 02:27:04,391 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:27:21,681 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: To proceed with the development of your personal knowledge base app, I need to clarify a few details...
+2026-02-28 02:27:21,695 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 02:27:54,587 - SWEAT - INFO - Architech: designing system.
+2026-02-28 02:29:26,116 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:29:26,210 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:29:26,218 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:29:26,276 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:29:26,283 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:29:26,356 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:29:26,364 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:29:26,425 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:29:26,440 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 02:29:26,511 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 02:29:26,531 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:29:26,664 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 02:29:26,679 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:29:26,818 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 02:29:26,843 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 02:29:26,985 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 08:40:54,603 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 08:41:24,789 - SWEAT - INFO - Architech: designing system.
+2026-02-28 08:43:19,082 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 08:43:19,239 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 08:43:19,247 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 08:43:19,312 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 08:43:19,319 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 08:43:19,406 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 08:43:19,416 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 08:43:19,489 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 08:43:19,502 - SWEAT - INFO - CodeSmith: writing code.
+2026-02-28 08:43:19,583 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-02-28 08:43:19,607 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 08:43:19,724 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 08:43:19,750 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 08:43:19,864 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 08:43:19,891 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-02-28 08:43:20,023 - SWEAT - INFO - PipeLine: starting CI.
+2026-02-28 17:17:46,771 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:18:25,604 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I'll gather requirements for the Titan Genesis project dashboard.
+
+**Project Requirements**
+
+1. **Da...
+2026-02-28 17:18:25,614 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:19:28,383 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: **Project Requirements:**
+
+1. Dashboard for SWEAT system
+2. Intuitive and professional-looking dashb...
+2026-02-28 17:19:28,392 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:20:46,661 - SWEAT - INFO - ReqMaster produced partial requirements (needs revision): ['missing_required_fields']
+2026-02-28 17:20:46,675 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:21:06,613 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: What is the desired user role for this dashboard? Is it a project manager, team lead, or someone els...
+2026-02-28 17:21:06,627 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:21:25,898 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: What is the desired user role for this dashboard? Is it a project manager, team lead, or someone els...
+2026-02-28 17:21:25,908 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:21:38,490 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:21:38,497 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:21:51,203 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:21:51,210 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:22:04,823 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:22:04,829 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:22:19,217 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:22:19,229 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:22:33,864 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:22:33,873 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:22:48,765 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:22:48,771 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:23:04,708 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:23:04,719 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:23:20,583 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:23:20,592 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:23:36,983 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:23:36,995 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:23:53,997 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:23:54,003 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:24:12,134 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:24:12,144 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:24:31,071 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:24:31,081 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:24:49,855 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:24:49,864 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:25:11,733 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:25:11,747 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:25:30,931 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:25:30,939 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:25:50,934 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:25:50,943 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:26:11,286 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:26:11,293 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:26:32,414 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:26:32,427 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:26:54,016 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:26:54,035 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:27:17,969 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:27:17,976 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:27:40,356 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:27:40,375 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:28:02,937 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:28:02,948 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:28:26,548 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:28:26,559 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:28:50,507 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:28:50,515 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:29:17,201 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:29:17,212 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:29:41,758 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:29:41,765 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:30:07,858 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:30:07,873 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:30:34,253 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:30:34,260 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-02-28 17:31:00,554 - SWEAT - DEBUG - ReqMaster output not JSON: Empty input text.
+2026-02-28 17:31:00,561 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:42:27,079 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:42:52,852 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: This is an exciting project! Before I finalize the requirements, I need some clarification to ensure...
+2026-03-02 02:42:52,897 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:42:59,695 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I need more information to create proper acceptance criteria. Please answer:
+
+1. What are all the st...
+2026-03-02 02:42:59,717 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:43:15,624 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I need more details to define proper acceptance criteria. Please answer:
+
+1. **Tech Stack**: What fr...
+2026-03-02 02:43:16,752 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:43:43,339 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are all the stag...
+2026-03-02 02:43:43,836 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:44:13,104 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these clarification questions:
+
+1. **SWEAT Sys...
+2026-03-02 02:44:16,611 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:45:03,334 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these clarification questions:
+
+1. **What is S...
+2026-03-02 02:45:10,963 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:46:23,947 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have enough context to begin requirements gathering for this project monitoring dashboard. However...
+2026-03-02 02:46:30,688 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:47:42,262 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. **Flow Stages**: You ...
+2026-03-02 02:47:51,359 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:48:34,737 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer:
+
+1. What does SWEAT stand for, and what is th...
+2026-03-02 02:48:38,045 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:49:32,896 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the requirements document, I need a few clarifications:
+
+1. **Flow Stages**: You m...
+2026-03-02 02:49:36,741 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:50:22,342 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. **SWEAT System Contex...
+2026-03-02 02:50:25,451 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:51:06,706 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+**Clarifying Questions:*...
+2026-03-02 02:51:12,951 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:51:41,942 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are all the stag...
+2026-03-02 02:51:46,445 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:52:33,589 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What does "SWEAT" sta...
+2026-03-02 02:52:36,425 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:53:27,361 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+**Key Clarifications Nee...
+2026-03-02 02:53:34,770 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:54:32,619 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What are the exact **...
+2026-03-02 02:54:43,485 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:56:07,155 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I write the requirements, I need a few clarifications:
+
+1. **SWEAT Flow Stages**: You mention...
+2026-03-02 02:56:16,620 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:57:33,489 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the complete requirements document, I need a few clarifications:
+
+1. **SWEAT Workf...
+2026-03-02 02:57:40,427 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 02:58:57,121 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+**Clarifying Questions:*...
+2026-03-02 02:59:04,233 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:00:00,129 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **SWEAT System Contex...
+2026-03-02 03:00:08,950 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:01:44,256 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. **What does SWEAT sta...
+2026-03-02 03:01:53,624 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:03:01,816 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these questions:
+
+1. **What is the SWEAT syste...
+2026-03-02 03:03:12,485 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:04:13,731 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What technology stack...
+2026-03-02 03:04:20,905 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:05:42,163 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What are all the stag...
+2026-03-02 03:06:07,226 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:07:31,921 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I can generate the requirements specification, I need some clarifications:
+
+1. **SWEAT System...
+2026-03-02 03:07:48,484 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:09:17,228 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are the specific...
+2026-03-02 03:09:18,286 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:09:52,504 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have enough context to begin, but need a few clarifications:
+
+1. **SWEAT Workflow Stages**: You me...
+2026-03-02 03:09:52,680 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:10:07,730 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What does "SWEAT" sta...
+2026-03-02 03:10:09,876 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:10:26,268 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What are all the stag...
+2026-03-02 03:10:26,317 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:10:45,809 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I understand you want a SWEAT Command Center dashboard. Before I write the requirements, I need some...
+2026-03-02 03:10:51,216 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:11:27,633 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **What are the comple...
+2026-03-02 03:11:27,678 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:11:57,284 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have enough to start drafting, but need a few clarifications:
+
+1. **SWEAT Flow Stages**: You menti...
+2026-03-02 03:11:58,703 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:12:25,893 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are all the stag...
+2026-03-02 03:12:25,947 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:12:41,590 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are the complete...
+2026-03-02 03:12:41,626 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:12:54,692 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these questions:
+
+1. What are all the stages i...
+2026-03-02 03:12:54,724 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:13:07,157 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these clarifying questions:
+
+1. What are the c...
+2026-03-02 03:13:07,177 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:13:20,366 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What are the **specif...
+2026-03-02 03:13:20,405 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:13:30,835 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **SWEAT System**: Wha...
+2026-03-02 03:13:30,854 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:13:41,432 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **SWEAT Workflow Stag...
+2026-03-02 03:13:41,458 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:13:56,213 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **Flow Stages**: You ...
+2026-03-02 03:13:56,249 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:14:20,001 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these questions:
+
+1. What are all the stages i...
+2026-03-02 03:14:20,040 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:14:36,105 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are all the stag...
+2026-03-02 03:14:36,146 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:14:56,576 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these questions:
+
+1. **SWEAT Workflow Stages**...
+2026-03-02 03:14:56,613 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:15:07,540 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. What are the exact st...
+2026-03-02 03:15:07,597 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:15:24,795 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. What are the exact st...
+2026-03-02 03:15:24,832 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:15:41,266 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I can generate the requirements specification, I need some clarification:
+
+1. **What are the ...
+2026-03-02 03:15:41,290 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:15:52,822 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Your requirements are fairly detailed for a dashboard/monitoring center. A few quick clarifications ...
+2026-03-02 03:15:52,867 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-02 03:16:02,247 - SWEAT - INFO - Architech: designing system.
+2026-03-02 03:27:03,459 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-02 03:27:11,223 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:39:07,485 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:39:09,000 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (815.8 MiB) (status code: 500)
+2026-03-03 14:39:26,659 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have a clear understanding of the feature requirements and success criteria. However, to provide a...
+2026-03-03 14:39:26,664 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:39:27,738 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (892.1 MiB) (status code: 500)
+2026-03-03 14:39:39,454 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the strict JSON output, I need a few clarifications:
+
+1. **Tech Stack**: Do you ha...
+2026-03-03 14:39:39,481 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:39:40,628 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (745.5 MiB) (status code: 500)
+2026-03-03 14:40:02,584 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the specification for NebulaOps, I need a few clarifications:
+
+1. **Tech Stack**: ...
+2026-03-03 14:40:02,593 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:40:03,749 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (739.6 MiB) (status code: 500)
+2026-03-03 14:40:12,954 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have enough context to proceed with **NebulaOps** requirements gathering.
+
+However, I need a few t...
+2026-03-03 14:40:12,994 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:40:14,521 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (691.6 MiB) (status code: 500)
+2026-03-03 14:40:42,851 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Looking at this request, I have enough context to begin creating the specification. Let me proceed w...
+2026-03-03 14:40:42,899 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:40:44,047 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (820.2 MiB) (status code: 500)
+2026-03-03 14:40:52,622 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I create the SDD and build NebulaOps, I need a few clarifications:
+
+1. **Tech Stack**: Prefer...
+2026-03-03 14:40:52,634 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:40:53,990 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (738.3 MiB) (status code: 500)
+2026-03-03 14:41:04,773 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the full SDD with acceptance criteria, I need a few clarifications:
+
+1. **Tech Sta...
+2026-03-03 14:41:04,784 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:41:05,940 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (921.7 MiB) (status code: 500)
+2026-03-03 14:41:36,841 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I draft the SDD for NebulaOps, I need clarification on critical architectural decisions:
+
+1. ...
+2026-03-03 14:41:36,860 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:41:38,069 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (799.9 MiB) (status code: 500)
+2026-03-03 14:41:54,008 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the full specification, I need to clarify a few critical decisions:
+
+**1. Tech Sta...
+2026-03-03 14:41:54,040 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:41:55,267 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (755.0 MiB) (status code: 500)
+2026-03-03 14:42:09,427 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I produce the SDD with strict JSON output, I need to clarify essential details:
+
+**Technical ...
+2026-03-03 14:42:09,442 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:42:10,650 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (746.1 MiB) (status code: 500)
+2026-03-03 14:42:23,954 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the complete requirements JSON for NebulaOps, I need a few clarifications:
+
+1. **T...
+2026-03-03 14:42:23,968 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:42:25,542 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (823.0 MiB) (status code: 500)
+2026-03-03 14:42:36,388 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before writing the SDD, I need to clarify a few critical details:
+
+1. **Tech Stack**: Which frontend...
+2026-03-03 14:42:36,400 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:42:37,544 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (676.3 MiB) (status code: 500)
+2026-03-03 14:42:48,412 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I create the SDD for NebulaOps, I need clarification on:
+
+1. **Tech Stack**: Preferred fronte...
+2026-03-03 14:42:48,426 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:42:49,640 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (794.2 MiB) (status code: 500)
+2026-03-03 14:43:04,709 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I produce the SDD and test plan, I need to clarify a few technical constraints:
+
+1. **Tech St...
+2026-03-03 14:43:04,720 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:43:06,319 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (782.8 MiB) (status code: 500)
+2026-03-03 14:43:24,600 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have substantial detail, but need specific technical and functional clarifications to produce a pr...
+2026-03-03 14:43:24,618 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:43:25,820 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (670.3 MiB) (status code: 500)
+2026-03-03 14:43:52,024 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **Tech Stack**: Do yo...
+2026-03-03 14:43:52,034 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:43:53,559 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (750.9 MiB) (status code: 500)
+2026-03-03 14:44:04,987 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions:
+
+1. **Tech stack**: Any p...
+2026-03-03 14:44:05,009 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:44:06,640 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (632.2 MiB) (status code: 500)
+2026-03-03 14:44:18,755 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before drafting the SDD for NebulaOps, I need a few clarifications:
+
+1. **Tech stack**: Any preferen...
+2026-03-03 14:44:18,772 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:44:19,830 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (724.8 MiB) (status code: 500)
+2026-03-03 14:44:30,307 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions....
+2026-03-03 14:44:30,321 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:44:32,175 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (1004.0 MiB) (status code: 500)
+2026-03-03 14:44:56,611 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions....
+2026-03-03 14:44:56,624 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:44:58,028 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (775.1 MiB) (status code: 500)
+2026-03-03 14:45:27,024 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **Tech Stack**: Do yo...
+2026-03-03 14:45:27,036 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:45:28,171 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (775.1 MiB) (status code: 500)
+2026-03-03 14:45:34,917 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions....
+2026-03-03 14:45:34,947 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:45:36,261 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (767.0 MiB) (status code: 500)
+2026-03-03 14:45:46,520 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before generating the full SDD, I need clarification on critical gaps:
+
+1. **Tech Stack**: Preferred...
+2026-03-03 14:45:46,536 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:45:47,640 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (630.2 MiB) (status code: 500)
+2026-03-03 14:46:04,709 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I've reviewed the NebulaOps requirements. This is a solid specification, but I need a few clarificat...
+2026-03-03 14:46:04,751 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:46:05,904 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (813.9 MiB) (status code: 500)
+2026-03-03 14:46:29,011 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the complete requirements JSON, I need a few clarifications:
+
+1. **Tech Stack**: D...
+2026-03-03 14:46:29,020 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:46:30,358 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (783.0 MiB) (status code: 500)
+2026-03-03 14:46:42,271 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Before I generate the full specification, I need clarification on the technical foundation:
+
+1. **Te...
+2026-03-03 14:46:42,285 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:46:43,556 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (922.9 MiB) (status code: 500)
+2026-03-03 14:47:05,927 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer interview questions.
+
+1. **Tech Stack**: What ...
+2026-03-03 14:47:05,938 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:47:07,136 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (836.3 MiB) (status code: 500)
+2026-03-03 14:47:30,086 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: Looking at your request, I have comprehensive requirements for NebulaOps. However, I need a few key ...
+2026-03-03 14:47:30,100 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:47:31,275 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (764.8 MiB) (status code: 500)
+2026-03-03 14:47:49,432 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I need more detail to produce accurate acceptance criteria. Please answer:
+
+1. **Tech Stack**: Prefe...
+2026-03-03 14:47:49,444 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:47:50,780 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (712.3 MiB) (status code: 500)
+2026-03-03 14:48:02,975 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: ReqMaster needs more detail before SDD. Please answer these questions:
+
+1. **Tech Stack**: Preferred...
+2026-03-03 14:48:02,987 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 14:48:04,261 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (777.6 MiB) (status code: 500)
+2026-03-03 14:48:38,012 - SWEAT - INFO - Architech: designing system.
+2026-03-03 14:49:21,308 - SWEAT - WARNING - Failed to save memory: model requires more system memory (1.3 GiB) than is available (735.8 MiB) (status code: 500)
+2026-03-03 14:53:00,672 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-03 14:53:02,328 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (695.6 MiB) (status code: 500)
+2026-03-03 14:53:06,657 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:53:06,674 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-03 14:53:07,922 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (616.2 MiB) (status code: 500)
+2026-03-03 14:53:10,350 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:53:10,364 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-03 14:53:11,403 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (677.1 MiB) (status code: 500)
+2026-03-03 14:53:13,124 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:53:13,140 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-03 14:53:14,216 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (606.2 MiB) (status code: 500)
+2026-03-03 14:53:17,020 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:53:17,039 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-03 14:53:18,634 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (792.1 MiB) (status code: 500)
+2026-03-03 14:53:21,597 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-03 14:53:21,623 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:53:28,629 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:53:35,233 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:53:41,596 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:53:48,496 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:53:56,039 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:02,658 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:09,707 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:16,180 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:23,152 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:29,913 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:36,745 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:43,598 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:50,177 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:54:56,652 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:55:03,695 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:55:10,709 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:55:17,506 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:55:24,616 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 14:55:31,504 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-03 23:43:49,865 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 23:43:51,162 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (712.4 MiB) (status code: 500)
+2026-03-03 23:43:56,838 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I'd love to build something cool, but I need more details! Here are a few quick questions:
+
+1. **Wha...
+2026-03-03 23:48:22,019 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-03 23:48:23,491 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (698.5 MiB) (status code: 500)
+2026-03-03 23:48:46,418 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I have most of the requirements, but need a few clarifications to ensure the acceptance criteria are...
+2026-03-04 00:15:23,586 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 00:15:24,797 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (560.1 MiB) (status code: 500)
+2026-03-04 00:15:32,483 - SWEAT - INFO - Architech: designing system.
+2026-03-04 00:16:50,681 - SWEAT - WARNING - Failed to save memory: model requires more system memory (1.3 GiB) than is available (937.1 MiB) (status code: 500)
+2026-03-04 00:19:50,070 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:19:51,369 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (869.0 MiB) (status code: 500)
+2026-03-04 00:19:54,591 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:19:54,610 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:19:55,695 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (636.2 MiB) (status code: 500)
+2026-03-04 00:20:42,275 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:20:42,291 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:20:43,702 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (645.7 MiB) (status code: 500)
+2026-03-04 00:21:12,443 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:21:12,471 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:21:13,883 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (755.1 MiB) (status code: 500)
+2026-03-04 00:21:22,243 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:21:22,262 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:21:23,500 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (677.8 MiB) (status code: 500)
+2026-03-04 00:21:50,895 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:21:50,924 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 00:21:57,870 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 00:22:05,084 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 00:22:11,440 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 00:22:18,524 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 00:23:11,825 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 00:23:13,054 - SWEAT - WARNING - ReqMaster memory retrieval failed: model requires more system memory (1.3 GiB) than is available (636.8 MiB) (status code: 500)
+2026-03-04 00:23:20,998 - SWEAT - INFO - Architech: designing system.
+2026-03-04 00:23:56,035 - SWEAT - WARNING - Failed to save memory: model requires more system memory (1.3 GiB) than is available (531.8 MiB) (status code: 500)
+2026-03-04 00:29:12,541 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:29:13,720 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (706.7 MiB) (status code: 500)
+2026-03-04 00:29:17,067 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:29:17,077 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:29:18,161 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (560.6 MiB) (status code: 500)
+2026-03-04 00:29:23,866 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:29:23,878 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:29:25,130 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (634.9 MiB) (status code: 500)
+2026-03-04 00:29:33,570 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 00:29:33,579 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 00:29:34,806 - SWEAT - WARNING - CodeSmith memory retrieval failed: model requires more system memory (1.3 GiB) than is available (551.2 MiB) (status code: 500)
+2026-03-04 03:47:37,113 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 03:47:50,163 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I need some clarification to define proper acceptance criteria:
+
+1. **Authentication type**: Should ...
+2026-03-04 05:43:14,506 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 05:43:18,702 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: <minimax:tool_call>
+<invoke name="filesystem_list_allowed_directories">
+</invoke>
+</minimax:tool_cal...
+2026-03-04 05:50:27,230 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 05:50:41,055 - SWEAT - INFO - Architech: designing system.
+2026-03-04 05:54:02,139 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 05:54:05,503 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 05:54:05,512 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 05:56:14,759 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 05:56:14,775 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 05:57:23,266 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 05:57:23,283 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 05:58:25,395 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 05:58:25,411 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 05:59:10,196 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 05:59:10,218 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 05:59:17,014 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 05:59:17,028 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 05:59:24,235 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 05:59:24,256 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 05:59:31,768 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 12:31:05,589 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-03-04 12:31:19,952 - SWEAT - DEBUG - ReqMaster output not JSON: Could not extract valid JSON from response: I don't see any existing requirements artifacts in the current conversation to continue from. Could ...
+2026-03-04 12:32:16,888 - SWEAT - INFO - Zocai is thinking...
+2026-03-04 12:32:30,467 - SWEAT - DEBUG - Zocai thought: {"next_agent": "pipeline"}
+2026-03-04 12:32:30,473 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 12:35:39,056 - SWEAT - INFO - Architech: designing system.
+2026-03-04 12:40:55,546 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 12:45:58,359 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 12:45:58,372 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 12:46:09,643 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 12:46:09,657 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 12:47:33,800 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 12:47:33,827 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 12:47:42,479 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 12:47:42,492 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 12:48:03,396 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 12:48:03,416 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 12:48:10,754 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 12:48:10,768 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 12:48:17,706 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 12:48:17,726 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 12:48:24,940 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:08:20,456 - SWEAT - INFO - Architech: designing system.
+2026-03-04 14:14:14,115 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:14:16,974 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:14:16,994 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:14:46,691 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:14:46,706 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:15:45,598 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:15:45,621 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:15:55,367 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:15:55,377 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:16:55,877 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:16:55,900 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:17:03,367 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:17:03,396 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:17:09,788 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:17:09,808 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:17:16,945 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:18:17,140 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:18:24,124 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:19:21,195 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:19:28,167 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:20:27,379 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:20:33,473 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:20:59,542 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:21:06,756 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:36:58,154 - SWEAT - INFO - Architech: designing system.
+2026-03-04 14:40:38,380 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:40:41,599 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:40:41,640 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:40:46,661 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:40:46,670 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:41:48,809 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:41:48,826 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:42:43,890 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:42:43,905 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:43:40,684 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:43:40,732 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:43:48,157 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:43:48,176 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:43:55,474 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:43:55,495 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:44:02,599 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:50:40,250 - SWEAT - INFO - Architech: designing system.
+2026-03-04 14:54:56,120 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:55:09,294 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:55:09,320 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:55:13,862 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:55:13,876 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:56:36,888 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:56:36,904 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:57:56,525 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:57:56,541 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-04 14:59:33,046 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-04 14:59:33,098 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:59:40,697 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:59:40,728 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:59:48,317 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 14:59:48,346 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 14:59:56,180 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 15:00:39,510 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 15:00:46,877 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 15:01:19,963 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 15:01:27,240 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 15:02:19,793 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 15:02:26,654 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-04 15:03:16,976 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-04 15:03:24,594 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-06 00:35:58,731 - SWEAT - INFO - Architech: designing system.
+2026-03-06 00:39:02,127 - SWEAT - INFO - Architech: designing system.
+2026-03-06 00:42:06,672 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-06 00:42:31,143 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-06 00:42:31,171 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-06 00:42:43,821 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-06 00:42:43,831 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-06 00:42:45,951 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-06 00:42:45,959 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-06 00:43:00,392 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-06 00:43:00,417 - SWEAT - INFO - CodeSmith: writing code.
+2026-03-06 00:43:12,369 - SWEAT - WARNING - CodeSmith tool parsing failed: No structured tool call found in model response.
+2026-03-06 00:43:12,413 - SWEAT - INFO - Gatekeeper: reviewing diff.
+2026-03-06 00:43:20,231 - SWEAT - INFO - PipeLine: starting CI.
+2026-03-06 00:51:05,589 - SWEAT - INFO - Architech: designing system.

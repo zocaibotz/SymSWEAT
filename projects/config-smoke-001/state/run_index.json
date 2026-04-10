@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "config-smoke-001",
+  "runs": {
+    "run_2026-03-04T03-47-37Z_b83bcb": {
+      "status": "completed",
+      "started_at_utc": "2026-03-04T03:47:37Z",
+      "ended_at_utc": "2026-03-04T03:47:54Z",
+      "last_seq": 10,
+      "last_event_id": "evt_000010_5042",
+      "last_node": "zocai",
+      "idempotency_keys": {
+        "run_2026-03-04T03-47-37Z_b83bcb:zocai:enter:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000002_19d6",
+        "run_2026-03-04T03-47-37Z_b83bcb:zocai:route:req_master_interview:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000003_e9ed",
+        "run_2026-03-04T03-47-37Z_b83bcb:zocai:exit:b78ddfaf40c83241acad871adedf5101b2c0efd08827266eab15ee31c3f861e0": "evt_000004_edac",
+        "run_2026-03-04T03-47-37Z_b83bcb:zocai:snapshot:1": "evt_000005_1624",
+        "run_2026-03-04T03-47-37Z_b83bcb:req_master_interview:enter:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000006_3474",
+        "run_2026-03-04T03-47-37Z_b83bcb:req_master_interview:route:__end__:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000007_0836",
+        "run_2026-03-04T03-47-37Z_b83bcb:req_master_interview:exit:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000008_1dca",
+        "run_2026-03-04T03-47-37Z_b83bcb:req_master_interview:snapshot:2": "evt_000009_523d"
+      }
+    }
+  },
+  "latest_run_id": "run_2026-03-04T03-47-37Z_b83bcb",
+  "updated_at_utc": "2026-03-04T03:47:54Z"
+}

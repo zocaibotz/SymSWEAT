@@ -1,0 +1,89 @@
+{
+  "timestamp_utc": "2026-02-26T08:41:47.672352+00:00",
+  "env": {
+    "has_LINEAR_API_KEY": true,
+    "has_LINEAR_TEAM_ID": true
+  },
+  "checks": [
+    {
+      "check": "diagnostics.api_key_present",
+      "pass": true,
+      "detail": {
+        "api_url": "https://api.linear.app/graphql",
+        "has_api_key": true,
+        "has_team_id": true,
+        "team_id_hint": "4b6221eb...",
+        "require_team": true
+      }
+    },
+    {
+      "check": "diagnostics.team_id_present",
+      "pass": true,
+      "detail": {
+        "api_url": "https://api.linear.app/graphql",
+        "has_api_key": true,
+        "has_team_id": true,
+        "team_id_hint": "4b6221eb...",
+        "require_team": true
+      }
+    },
+    {
+      "check": "viewer_query",
+      "pass": true,
+      "detail": {
+        "id": "50d0ce60-db18-4da2-8b3c-0d75f5a31966",
+        "name": "Zoc AI",
+        "email": "zoc.ai.botz@gmail.com"
+      }
+    },
+    {
+      "check": "list_workflow_states",
+      "pass": true,
+      "detail": {
+        "count": 6
+      }
+    },
+    {
+      "check": "find_project_by_name:SWEAT",
+      "pass": true,
+      "detail": "0d0b41b1-8898-4d38-bd5c-6a89477932d3"
+    },
+    {
+      "check": "list_project_issues:SWEAT",
+      "pass": true,
+      "detail": {
+        "count": 10
+      }
+    },
+    {
+      "check": "get_issue:ZOC-29",
+      "pass": true,
+      "detail": "e853a046-97b4-42de-81e6-eb653387dfd8"
+    },
+    {
+      "check": "get_issue:ZOC-30",
+      "pass": true,
+      "detail": "7be92bfc-32a6-4599-8130-49c49854562d"
+    },
+    {
+      "check": "get_issue:ZOC-31",
+      "pass": true,
+      "detail": "336da33b-3ada-4ad5-8210-ad2438efff9e"
+    },
+    {
+      "check": "get_issue:ZOC-32",
+      "pass": true,
+      "detail": "6367d9c3-3352-418a-b30f-48c67e51b934"
+    },
+    {
+      "check": "transition_issue:ZOC-29->started",
+      "pass": true,
+      "detail": "started"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0
+  }
+}

@@ -1,0 +1,27 @@
+name: NorthStar Signoff
+
+on:
+  workflow_dispatch:
+
+jobs:
+  northstar_signoff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Bootstrap runtime
+        run: |
+          bash scripts/ci_bootstrap.sh
+      - name: Run milestone signoff
+        run: |
+          python scripts/milestone_signoff.py projects/overnight-e2e-01 --rerun --max-steps 80
+      - name: Upload signoff artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: northstar-signoff
+          path: |
+            reports/runs/milestone_signoff.json
+            reports/runs/milestone_signoff.md
+            reports/runs/strict_e2e_validation.json

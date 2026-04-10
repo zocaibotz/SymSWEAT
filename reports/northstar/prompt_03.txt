@@ -1,0 +1,1 @@
+Build a habit tracker with daily check-ins, streaks, weekly view, and reminders hook. Include testable acceptance criteria.

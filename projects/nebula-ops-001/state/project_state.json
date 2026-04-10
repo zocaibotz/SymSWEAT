@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "state_version": 90,
+  "project_id": "nebula-ops-001",
+  "project_slug": "nebula-ops-001",
+  "lifecycle": {
+    "phase": "codesmith",
+    "status": "in_progress",
+    "current_run_id": "run_2026-03-03T14-39-07Z_5b9ea0",
+    "last_updated_utc": "2026-03-03T14:55:38Z"
+  },
+  "gates": {
+    "design_approved": true,
+    "tdd_ready": true,
+    "ci_passed": false,
+    "deployment_approved": false
+  },
+  "artifacts": {
+    "spec": "projects/nebula-ops-001/docs/spec/spec.md",
+    "plan": "projects/nebula-ops-001/docs/spec/plan.md",
+    "tasks": "projects/nebula-ops-001/docs/spec/tasks.md",
+    "architecture": "docs/SWEAT_ARCHITECTURE_AS_BUILT.md",
+    "unit_tests_plan": "projects/nebula-ops-001/docs/tests/unit_test_plan.md",
+    "integration_tests_plan": "projects/nebula-ops-001/docs/tests/integration_test_plan.md",
+    "playwright_tests_plan": "projects/nebula-ops-001/docs/tests/playwright_test_plan.md",
+    "run_report": "reports/runs/latest_run_report.json"
+  },
+  "integrations": {
+    "linear": {
+      "project_id": null,
+      "project_url": null
+    },
+    "ci": {
+      "provider": "github_actions",
+      "last_result": null
+    },
+    "automation": {
+      "status": "pending"
+    }
+  },
+  "memory": {
+    "last_agent": null,
+    "last_20_run_ids": [
+      "run_2026-03-03T14-39-07Z_5b9ea0"
+    ]
+  }
+}

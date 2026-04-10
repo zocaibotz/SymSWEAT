@@ -1,0 +1,1 @@
+Build an MVP note-taking app with auth, notes CRUD, search, and tag filters. Provide testable acceptance criteria.

@@ -1,0 +1,16 @@
+{
+  "run_id": "run_2026-03-04T03-47-37Z_b83bcb",
+  "project_id": "config-smoke-001",
+  "cwd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT",
+  "workspace_path": "projects/config-smoke-001",
+  "linear": {
+    "has_api_key": true,
+    "has_team_id": true
+  },
+  "providers": {
+    "has_gemini_api_key": true,
+    "has_openai_api_key": true,
+    "has_anthropic_api_key": true
+  },
+  "ts": 1772596057
+}

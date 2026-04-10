@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SWEAT Run Event",
+  "type": "object",
+  "required": ["schema_version", "event_id", "run_id", "project_id", "ts_utc", "node", "event_type", "seq", "payload"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "event_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string", "minLength": 1},
+    "ts_utc": {"type": "string"},
+    "node": {"type": "string"},
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "run_start", "run_end", "node_enter", "node_exit", "route_decision",
+        "state_patch_applied", "artifact_written", "gate_result", "validation_error",
+        "retry_scheduled", "integration_call", "ci_result", "deployment_result"
+      ]
+    },
+    "seq": {"type": "integer", "minimum": 1},
+    "payload": {"type": "object"}
+  }
+}

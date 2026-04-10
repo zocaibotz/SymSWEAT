@@ -1,0 +1,27 @@
+{
+  "requirements_interview_status": "complete",
+  "project_workspace_path": "projects/northstar-runset/runset-04",
+  "project_state_version": 55,
+  "next_agent": "sdd_specify",
+  "requirements_open_questions": [],
+  "run_id": "run_2026-02-28T01-55-37Z_cc8923",
+  "run_started": true,
+  "requirements": {
+    "name": "Titan Genesis Task Board",
+    "goal": "Create a lightweight, single-file Python task board with drag-and-drop status management and assignee filtering.",
+    "acceptance_criteria": [
+      "The application displays multiple columns representing task states (e.g., To Do, In Progress, Done).",
+      "Users can drag and drop task cards between columns to update their status.",
+      "Users can filter the displayed tasks by assignee name.",
+      "The application is contained within a single Python file using a lightweight web framework (e.g., Flask or FastAPI).",
+      "Task state is persisted (e.g., to a local JSON file or SQLite database)."
+    ],
+    "constraints": [
+      "Architecture: Single python file app",
+      "Target Platform: Linux"
+    ]
+  },
+  "project_id": "runset-04",
+  "requirements_revision_reasons": [],
+  "snapshot_kind": "resume"
+}

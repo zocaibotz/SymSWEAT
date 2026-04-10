@@ -1,0 +1,1 @@
+{"timestamp_utc": "2026-03-22T14:07:28.784727+00:00", "project_id": "shadow-smoke-1", "v1_next_agent": "sdd_specify", "v2_next_agent": "gatekeeper", "v2_stage": "qa", "v2_policy_violations": ["tests_not_executed", "insufficient_criteria_coverage"], "agreed": false}

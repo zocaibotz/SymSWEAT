@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-02-27T15:43:17Z",
+  "project_id": "overnight-e2e-01",
+  "project_dir": "projects/overnight-e2e-01",
+  "steps": 15,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 2,
+      "node": "req_master_interview",
+      "next_agent": "sdd_specify"
+    },
+    {
+      "step": 3,
+      "node": "sdd_specify",
+      "next_agent": "sdd_plan"
+    },
+    {
+      "step": 4,
+      "node": "sdd_plan",
+      "next_agent": "sdd_tasks"
+    },
+    {
+      "step": 5,
+      "node": "sdd_tasks",
+      "next_agent": "architect"
+    },
+    {
+      "step": 6,
+      "node": "architect",
+      "next_agent": "pixel"
+    },
+    {
+      "step": 7,
+      "node": "pixel",
+      "next_agent": "frontman"
+    },
+    {
+      "step": 8,
+      "node": "frontman",
+      "next_agent": "design_approval_gate"
+    },
+    {
+      "step": 9,
+      "node": "design_approval_gate",
+      "next_agent": "tdd_orchestrator"
+    },
+    {
+      "step": 10,
+      "node": "tdd_orchestrator",
+      "next_agent": "unit_test_author"
+    },
+    {
+      "step": 11,
+      "node": "unit_test_author",
+      "next_agent": "integration_test_author"
+    },
+    {
+      "step": 12,
+      "node": "integration_test_author",
+      "next_agent": "playwright_test_author"
+    },
+    {
+      "step": 13,
+      "node": "playwright_test_author",
+      "next_agent": "test_readiness_gate"
+    },
+    {
+      "step": 14,
+      "node": "test_readiness_gate",
+      "next_agent": "github_bootstrap"
+    },
+    {
+      "step": 15,
+      "node": "github_bootstrap",
+      "next_agent": "__end__"
+    }
+  ],
+  "final_next_agent": "__end__",
+  "run_id": "run_2026-02-27T15-41-00Z_1bc0f6"
+}

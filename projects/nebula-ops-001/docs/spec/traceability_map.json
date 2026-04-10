@@ -1,0 +1,270 @@
+{
+  "items": [
+    {
+      "id": "AC-001",
+      "requirement": "User can capture a raw idea with title and description in under 30 seconds",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-001.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-001.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-001.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-002",
+      "requirement": "User can score each idea on impact (1-10), effort (1-10), and urgency (1-10)",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-002.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-002.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-002.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-003",
+      "requirement": "Prioritization Engine calculates weighted score and sorts ideas descending Mission Board displays top 3 ideas by score as missions",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-003.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-003.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-003.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-004",
+      "requirement": "Weekly",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-004.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-004.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-004.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-005",
+      "requirement": "Each mission auto-generates at least 3 subtasks",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-005.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-005.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-005.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-006",
+      "requirement": "Progress Radar shows visual status indicators (Not Started, In Progress, Done, Blocked)",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-006.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-006.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-006.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-007",
+      "requirement": "User can mark tasks complete and add blockers with descriptions",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-007.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-007.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-007.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-008",
+      "requirement": "Progress Radar displays confidence trend line over past 4 weeks",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-008.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-008.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-008.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-009",
+      "requirement": "Reflection Loop generates retrospective with: what went well, what didn't, suggested next actions",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-009.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-009.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-009.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-010",
+      "requirement": "User can complete full workflow (add idea → prioritize → generate plan → track → reflect) in under 10 minutes",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-010.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-010.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-010.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-011",
+      "requirement": "Basic authentication restricts access to registered users only",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-011.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-011.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-011.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-012",
+      "requirement": "All core paths have automated unit/integration test coverage",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-012.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-012.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-012.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-013",
+      "requirement": "Application handles errors gracefully with user-friendly messages",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-013.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-013.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-013.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    },
+    {
+      "id": "AC-014",
+      "requirement": "Application exposes health/ready endpoints for observability",
+      "tests": {
+        "unit": [
+          "tests/unit/test_ac-014.py"
+        ],
+        "integration": [
+          "tests/integration/test_ac-014.py"
+        ],
+        "e2e": [
+          "tests/e2e/ac-014.spec.ts"
+        ]
+      },
+      "implementation_targets": [
+        "src/app.py",
+        "src/App.jsx"
+      ]
+    }
+  ]
+}

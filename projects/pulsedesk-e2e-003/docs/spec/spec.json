@@ -1,0 +1,31 @@
+{
+  "name": "PulseDesk - Solo Builder Operations Platform",
+  "acceptance_criteria": [
+    "User can register, login, and logout and access only their own data",
+    "User can create, list, update, and delete tasks with status and due date",
+    "User can create, list, update, and delete incident records with severity and resolution notes",
+    "Dashboard displays open tasks count, incidents by severity, and weekly completion trend",
+    "Weekly digest export returns markdown summary with completed tasks, open risks, and incident recap"
+  ],
+  "goal": "Help solo builders reduce operational blind spots and close weekly priorities with confidence",
+  "constraints": {
+    "backend": "Python",
+    "frontend": "Simple web frontend",
+    "database": "SQLite",
+    "testing": "Unit and integration tests for core workflows",
+    "documentation": "Deploy/run docs included"
+  },
+  "in_scope": [
+    "Authentication (register/login/logout)",
+    "Task CRUD with status and due date",
+    "Incident logging with severity and resolution notes",
+    "KPI dashboard",
+    "Weekly digest markdown export"
+  ],
+  "out_of_scope": [
+    "SSO",
+    "Billing",
+    "External marketplace integrations",
+    "Mobile native app"
+  ]
+}

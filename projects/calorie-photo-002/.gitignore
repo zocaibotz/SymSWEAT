@@ -1,0 +1,13 @@
+# SWEAT mandatory secrets guard
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+.venv/
+venv/
+node_modules/
+__pycache__/
+.DS_Store

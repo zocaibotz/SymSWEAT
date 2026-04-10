@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWEAT Command Center</title>
+  <style>
+    body { margin:0; font-family: Inter, Arial, sans-serif; background:#0a1120; color:#e7eefb; }
+    header { padding:14px 20px; border-bottom:1px solid #31476a; background:#111b2d; }
+    .wrap { padding:16px 20px; }
+    .grid { display:grid; grid-template-columns:2fr 1fr; gap:12px; }
+    .card { border:1px solid #31476a; border-radius:10px; background:#16233b; padding:12px; }
+    .muted { color:#9fb2cf; font-size:12px; }
+    .ok { color:#26c281; } .warn { color:#f3b544; } .bad { color:#f06d6d; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th,td { border-bottom:1px solid #31476a; padding:8px; text-align:left; }
+    button { background:#5ea3ff; color:white; border:0; border-radius:8px; padding:6px 10px; cursor:pointer; }
+    #events { max-height:320px; overflow:auto; font-family: ui-monospace, monospace; font-size:12px; }
+
+    #artifact-modal-overlay { position: fixed; inset: 0; background: rgba(2, 8, 20, 0.72); display: none; align-items: center; justify-content: center; z-index: 9999; }
+    #artifact-modal { width: min(980px, 92vw); max-height: 86vh; background: #0f172a; border: 1px solid #31476a; border-radius: 12px; display: flex; flex-direction: column; overflow: hidden; }
+    #artifact-modal-header { display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-bottom:1px solid #31476a; background:#111b2d; }
+    #artifact-modal-title { font-weight:600; }
+    #artifact-modal-body { margin:0; white-space:pre-wrap; padding:12px; overflow:auto; font-family: ui-monospace, monospace; font-size:12px; }
+  </style>
+</head>
+<body>
+  <header><strong>SWEAT Command Center UI</strong> <span class="muted">(fast shippable live monitor)</span></header>
+  <div class="wrap">
+    <div class="card" style="margin-bottom:12px;">
+      <button onclick="load()">Refresh</button>
+      <form method="post" action="/ui/logout" style="display:inline; margin-left:8px;">
+        <button type="submit" style="background:#334155;">Logout</button>
+      </form>
+    </div>
+
+    <div class="card" style="margin-bottom:12px;">
+      <button id="tab-main" onclick="setTab('main')">Active (running ≤7d)</button>
+      <button id="tab-archived" onclick="setTab('archived')" style="background:#334155; margin-left:8px;">Archived (all others)</button>
+    </div>
+
+    <div id="main-view">
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin-top:0">Projects</h3>
+          <table>
+            <thead><tr><th>Project</th><th>Lifecycle (rule-based)</th><th>Status</th><th>Stage</th><th>Blockers</th><th>Action</th><th>Details</th></tr></thead>
+            <tbody id="projects"></tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Observability Health</h3>
+          <div id="health" class="muted">Waiting for data...<br/>Active rule: lifecycle/status must be running or in_progress AND last update within 7 days.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="project-view" style="display:none;">
+      <div class="card" style="margin-bottom:12px;">
+        <button onclick="goHome()">← Back to Main</button>
+        <h3 id="project-title" style="margin:10px 0 0 0;"></h3>
+        <div id="project-meta" class="muted"></div>
+        <div style="margin-top:8px;">Project Stream: <strong id="project-stream" class="warn">connecting</strong></div>
+      </div>
+      <div class="card" style="margin-bottom:12px;">
+        <h3 style="margin-top:0">SWEAT Stage Progress</h3>
+        <div id="stage-progress"></div>
+      </div>
+      <div class="card" style="margin-bottom:12px;">
+        <h3 style="margin-top:0">Stage Tasks & Details</h3>
+        <div id="stage-tasks"></div>
+      </div>
+      <div class="card" style="margin-bottom:12px;">
+        <h3 style="margin-top:0">Artifacts</h3>
+        <div id="artifacts"></div>
+      </div>
+      <div class="card" style="margin-bottom:12px;">
+        <h3 style="margin-top:0">Project Live Event Stream</h3>
+        <div id="events"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="artifact-modal-overlay" onclick="closeArtifactModal(event)">
+    <div id="artifact-modal">
+      <div id="artifact-modal-header">
+        <div id="artifact-modal-title">Artifact Preview</div>
+        <button onclick="closeArtifactModal()" style="background:#334155;">Close</button>
+      </div>
+      <pre id="artifact-modal-body">Select an artifact to preview.</pre>
+    </div>
+  </div>
+
+<script>
+const state = { projects: [], events: [], activeTab: 'main', projectId: null };
+const stageOrder = ['requirement_master','specify','plan','tasks','architect','pixel','frontman','code_smith','review','ci_deploy_automator'];
+const nodeToStage = {
+  zocai:'requirement_master', req_master:'requirement_master', req_master_interview:'requirement_master',
+  sdd_specify:'specify', sdd_plan:'plan', sdd_tasks:'tasks', architect:'architect', pixel:'pixel', frontman:'frontman',
+  codesmith:'code_smith', bughunter:'review', gatekeeper:'review', pipeline:'ci_deploy_automator', integrator:'ci_deploy_automator', deployer:'ci_deploy_automator', automator:'ci_deploy_automator'
+};
+function esc(s){return String(s ?? '').replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));}
+function healthOf(p){
+  const b = p.blockers || [];
+  const high = b.filter(x=>String(x.kind||'').includes('validation_error')||String(x.status||'').includes('failed')||String(x.status||'').includes('blocked')).length;
+  const med = b.length - high;
+  if (high>=2) return ['CRITICAL','bad'];
+  if (high>=1 || med>=1) return ['WATCH','warn'];
+  return ['STABLE','ok'];
+}
+function stageOfNode(node){ return nodeToStage[node] || 'requirement_master'; }
+function goHome(){ window.location.href = '/ui'; }
+
+function setTab(tab){
+  state.activeTab = tab;
+  const m = document.getElementById('tab-main');
+  const a = document.getElementById('tab-archived');
+  if (m && a) {
+    m.style.background = tab === 'main' ? '#5ea3ff' : '#334155';
+    a.style.background = tab === 'archived' ? '#5ea3ff' : '#334155';
+  }
+  renderProjects();
+}
+
+async function archiveToggle(projectId, archived){
+  const route = archived ? 'unarchive' : 'archive';
+  await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}/${route}`, { method: 'POST' });
+  await load();
+}
+
+function renderProjects(){
+  const tb = document.getElementById('projects');
+  if (!tb) return;
+  const view = state.activeTab === 'archived'
+    ? state.projects.filter(p => p.lifecycle_bucket === 'archived')
+    : state.projects.filter(p => p.lifecycle_bucket !== 'archived');
+
+  const sorted = [
+    ...view.filter(p => p.lifecycle_bucket === 'active'),
+    ...view.filter(p => p.lifecycle_bucket === 'idle'),
+    ...view.filter(p => p.lifecycle_bucket === 'archived'),
+  ];
+
+  tb.innerHTML = sorted.map(p=>{
+    const h = healthOf(p);
+    const lifecycleClass = p.lifecycle_bucket === 'active' ? 'ok' : (p.lifecycle_bucket === 'idle' ? 'warn' : 'muted');
+    const actionLabel = p.archived ? 'Unarchive' : 'Archive';
+    return `<tr>
+      <td><a href="/ui/project/${encodeURIComponent(p.project_id)}" style="color:#8ec5ff;text-decoration:none;">${esc(p.display_name)}</a></td>
+      <td><span class='${lifecycleClass}'>${esc(p.lifecycle_bucket || 'unknown')}</span></td>
+      <td>${esc(p.status)}</td>
+      <td>${esc(p.current_stage)}</td>
+      <td>${(p.blockers||[]).length} <span class='${h[1]}'>${h[0]}</span></td>
+      <td><button onclick="archiveToggle('${esc(p.project_id)}', ${Boolean(p.archived)})">${actionLabel}</button></td>
+      <td><a href="/ui/project/${encodeURIComponent(p.project_id)}"><button>Open Details</button></a></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="7" class="muted">No projects</td></tr>';
+}
+
+function openArtifactModal(title, body){
+  const overlay = document.getElementById('artifact-modal-overlay');
+  const h = document.getElementById('artifact-modal-title');
+  const b = document.getElementById('artifact-modal-body');
+  h.textContent = title || 'Artifact Preview';
+  b.textContent = body || 'No preview available.';
+  overlay.style.display = 'flex';
+}
+
+function closeArtifactModal(evt){
+  const overlay = document.getElementById('artifact-modal-overlay');
+  if (evt && evt.target && evt.target.id !== 'artifact-modal-overlay') return;
+  overlay.style.display = 'none';
+}
+
+async function viewArtifact(projectId, key){
+  openArtifactModal(`Artifact: ${key}`, 'Loading artifact...');
+  const res = await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}/artifacts/${encodeURIComponent(key)}`);
+  const data = await res.json();
+  if (!res.ok) {
+    openArtifactModal(`Artifact: ${key}`, `Failed to load artifact: ${data.detail || res.status}`);
+    return;
+  }
+  openArtifactModal(`Artifact: ${key}`, data.preview || `(No text preview)\nPath: ${data.resolved_path || data.artifact?.path || 'n/a'}`);
+}
+
+function renderProjectDetails(details){
+  const summary = details.summary || {};
+  document.getElementById('project-title').textContent = summary.display_name || state.projectId;
+  document.getElementById('project-meta').textContent = `Status: ${summary.status} | Current stage: ${summary.current_stage} | Run: ${summary.latest_run_id || 'n/a'}`;
+
+  const progress = (details.pipeline || []).map(step => {
+    const color = step.status === 'completed' ? '#26c281' : (step.status === 'active' ? '#5ea3ff' : '#9fb2cf');
+    return `<span style="display:inline-block;margin:4px;padding:6px 8px;border:1px solid ${color};border-radius:8px;color:${color}">${esc(step.stage)} (${esc(step.status)})</span>`;
+  }).join('');
+  document.getElementById('stage-progress').innerHTML = progress || '<div class="muted">No stage progress yet.</div>';
+
+  const grouped = {};
+  for (const evt of (details.timeline || [])) {
+    const stage = stageOfNode(evt.node);
+    if (!grouped[stage]) grouped[stage] = [];
+    grouped[stage].push(evt);
+  }
+
+  const html = stageOrder.map(stage => {
+    const events = grouped[stage] || [];
+    const rows = events.slice(-12).reverse().map(e => `<li>${esc(e.ts_utc)} · ${esc(e.node)} / ${esc(e.event_type)} — ${esc(e.summary)}</li>`).join('');
+    return `<div style="margin-bottom:12px;padding:10px;border:1px solid #31476a;border-radius:8px;">
+      <div style="font-weight:600;margin-bottom:6px;">${esc(stage)} <span class="muted">(${events.length} task/events)</span></div>
+      <ul style="margin:0 0 0 16px;">${rows || '<li class="muted">No tasks/events yet.</li>'}</ul>
+    </div>`;
+  }).join('');
+  document.getElementById('stage-tasks').innerHTML = html;
+
+  const artifacts = details.artifacts || [];
+  document.getElementById('artifacts').innerHTML = artifacts.length
+    ? artifacts.map(a => `<div style="margin:4px 0;"><button onclick="viewArtifact('${esc(state.projectId)}','${esc(a.key)}')">View</button> <span class="muted">${esc(a.key)} → ${esc(a.path || a.url || '')}</span></div>`).join('')
+    : '<div class="muted">No artifacts found.</div>';
+}
+
+async function load(){
+  const path = window.location.pathname;
+  const isProjectPage = path.startsWith('/ui/project/');
+  document.getElementById('main-view').style.display = isProjectPage ? 'none' : 'block';
+  document.getElementById('project-view').style.display = isProjectPage ? 'block' : 'none';
+
+  if (isProjectPage) {
+    const projectId = decodeURIComponent(path.split('/').pop() || '');
+    state.projectId = projectId;
+    document.getElementById('tab-main').style.display = 'none';
+    document.getElementById('tab-archived').style.display = 'none';
+    const res = await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}`);
+    if (!res.ok) throw new Error('Unable to load project page');
+    const details = await res.json();
+    renderProjectDetails(details);
+    return;
+  }
+
+  document.getElementById('tab-main').style.display = 'inline-block';
+  document.getElementById('tab-archived').style.display = 'inline-block';
+  const res = await fetch('/api/monitoring/projects');
+  const data = await res.json();
+  state.projects = data.projects || [];
+
+  renderProjects();
+
+  const critical = state.projects.filter(p=>healthOf(p)[0]==='CRITICAL').length;
+  const watch = state.projects.filter(p=>healthOf(p)[0]==='WATCH').length;
+  const stable = state.projects.length-critical-watch;
+  document.getElementById('health').innerHTML =
+    `Critical: <span class='bad'>${critical}</span><br/>` +
+    `Watch: <span class='warn'>${watch}</span><br/>` +
+    `Stable: <span class='ok'>${stable}</span><br/>` +
+    `Active: <span class='ok'>${data.active_count||0}</span> · Idle: <span class='warn'>${data.idle_count||0}</span> · Archived: <span class='muted'>${data.archived_count||0}</span>`;
+}
+
+function startStream(){
+  if (!window.location.pathname.startsWith('/ui/project/')) return;
+  const projectId = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+  const es = new EventSource(`/api/monitoring/stream?project_id=${encodeURIComponent(projectId)}`);
+  es.onopen = ()=> {
+    const s = document.getElementById('project-stream');
+    if (s) { s.textContent='connected'; s.className='ok'; }
+  };
+  es.onerror = ()=> {
+    const s = document.getElementById('project-stream');
+    if (s) { s.textContent='error'; s.className='bad'; }
+  };
+  es.addEventListener('heartbeat', ()=>{
+    const s = document.getElementById('project-stream');
+    if (s) { s.textContent='connected'; s.className='ok'; }
+  });
+  es.addEventListener('run_event', (msg)=>{
+    try {
+      const p = JSON.parse(msg.data);
+      state.events.push(p);
+      state.events = state.events.slice(-150);
+      const el = document.getElementById('events');
+      if (el) {
+        el.innerHTML = state.events.slice().reverse().map(e=>`<div>${esc(e.event?.ts_utc)} · ${esc(e.event?.node)} / ${esc(e.event?.event_type)}</div>`).join('');
+      }
+    } catch {}
+  });
+}
+
+setTab('main');
+load();
+setInterval(load, 10000);
+startStream();
+</script>
+</body>
+</html>

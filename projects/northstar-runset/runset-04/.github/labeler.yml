@@ -1,0 +1,6 @@
+documentation:
+  - '**/*.md'
+python:
+  - '**/*.py'
+ci:
+  - '.github/workflows/*'

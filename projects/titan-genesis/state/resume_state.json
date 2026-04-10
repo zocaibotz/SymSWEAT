@@ -1,0 +1,32 @@
+{
+  "run_id": "run_2026-03-02T02-42-27Z_8069ff",
+  "requirements": {
+    "name": "SWEAT Command Center Dashboard",
+    "acceptance_criteria": [
+      "Dashboard displays a list of all SWEAT projects with status indicators (in-progress, completed)",
+      "Each project entry shows project name, current flow stage, and last updated timestamp",
+      "Clicking a project navigates to its dedicated detail page",
+      "Detail page top section displays a visual flow indicator showing all stages from Requirement Master to Code Smith",
+      "Current stage is highlighted in the flow indicator",
+      "Detail page middle section displays detailed information about the current active stage",
+      "Detail page right sidebar displays real-time statistics including: total tasks, completed tasks, in-progress tasks, open Linear issues, closed Linear issues",
+      "Detail page provides instant access to all generated artefacts: Requirements文档, Specification文档, Plans, Tasks, Linear issues",
+      "Artefacts are categorized and clickable with direct links or preview capability",
+      "Dashboard shows project progress percentage based on completed stages",
+      "Completed projects are visually distinguished from in-progress projects",
+      "All page loads complete within 2 seconds",
+      "Dashboard is responsive and usable on desktop (1920x1080 minimum)",
+      "Professional, command-center aesthetic with dark mode option"
+    ],
+    "project_name": "Titan Genesis"
+  },
+  "next_agent": "codesmith",
+  "requirements_interview_status": "complete",
+  "requirements_revision_reasons": [],
+  "project_workspace_path": "projects/titan-genesis",
+  "project_state_version": 62,
+  "run_started": true,
+  "requirements_open_questions": [],
+  "project_id": "demo-001",
+  "snapshot_kind": "resume"
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sweat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sweat
+  template:
+    metadata:
+      labels:
+        app: sweat
+    spec:
+      containers:
+      - name: sweat
+        image: zocaibotz/sweat:latest
+        ports:
+        - containerPort: 8000

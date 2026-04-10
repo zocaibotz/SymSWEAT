@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-03-04T05:43:25Z",
+  "project_id": "calorie-photo-001",
+  "project_dir": "projects/calorie-photo-001",
+  "steps": 2,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 2,
+      "node": "req_master_interview",
+      "next_agent": "__end__"
+    }
+  ],
+  "final_next_agent": "__end__",
+  "run_id": "run_2026-03-04T05-43-14Z_aed204"
+}

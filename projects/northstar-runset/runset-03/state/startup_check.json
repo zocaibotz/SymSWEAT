@@ -1,0 +1,16 @@
+{
+  "run_id": "run_2026-02-28T01-53-24Z_f440cf",
+  "project_id": "runset-03",
+  "cwd": "/home/claw-admin/.openclaw/workspace/projects/SWEAT",
+  "workspace_path": "projects/northstar-runset/runset-03",
+  "linear": {
+    "has_api_key": true,
+    "has_team_id": true
+  },
+  "providers": {
+    "has_gemini_api_key": true,
+    "has_openai_api_key": true,
+    "has_anthropic_api_key": true
+  },
+  "ts": 1772265636
+}

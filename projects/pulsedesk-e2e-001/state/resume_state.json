@@ -1,0 +1,19 @@
+{
+  "project_state_version": 1,
+  "project_workspace_path": "projects/pulsedesk-e2e-001",
+  "run_id": "run_2026-03-03T23-48-22Z_dd5cf4",
+  "next_agent": "req_master_interview",
+  "requirements_interview_status": "awaiting_human",
+  "requirements_open_questions": [
+    "What business outcome should this feature achieve?",
+    "What is in-scope and explicitly out-of-scope?",
+    "What are the acceptance criteria we must test?",
+    "Any constraints (security/performance/deadline/tech stack)?"
+  ],
+  "requirements_revision_reasons": [
+    "missing_requirements"
+  ],
+  "run_started": true,
+  "project_id": "pulsedesk-e2e-001",
+  "snapshot_kind": "resume"
+}

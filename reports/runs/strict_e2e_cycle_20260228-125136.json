@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-02-28T12:51:36Z",
+  "project_id": "command-center-dashboard",
+  "project_dir": "projects/command-center-dashboard",
+  "steps": 1,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "__end__"
+    }
+  ],
+  "final_next_agent": "__end__",
+  "run_id": "run_2026-02-28T08-40-54Z_3e03d3"
+}

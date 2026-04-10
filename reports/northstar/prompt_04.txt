@@ -1,0 +1,1 @@
+Create a lightweight project task board with columns, drag/drop status changes, and assignee filters. Include acceptance criteria.

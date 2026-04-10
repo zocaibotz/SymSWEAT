@@ -1,0 +1,184 @@
+name: CI-CD
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: pytest -q --cov=src --cov-report=xml --cov-report=term-missing --cov-fail-under=95
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml
+
+  integration:
+    runs-on: ubuntu-latest
+    needs: unit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: pytest -q tests/integration
+
+  e2e_playwright:
+    runs-on: ubuntu-latest
+    needs: integration
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect Playwright requirements
+        id: detect_pw
+        run: |
+          if [[ -f package.json && -d tests/e2e ]]; then
+            echo "required=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "required=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.detect_pw.outputs.required == 'true'
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - if: steps.detect_pw.outputs.required == 'true'
+        run: npm ci
+      - if: steps.detect_pw.outputs.required == 'true'
+        run: npx playwright install --with-deps
+      - if: steps.detect_pw.outputs.required == 'true'
+        run: npx playwright test
+      - if: steps.detect_pw.outputs.required == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-artifacts
+          path: |
+            playwright-report
+            test-results
+      - if: steps.detect_pw.outputs.required != 'true'
+        run: echo "Playwright e2e skipped (no package.json/tests/e2e)."
+
+  security:
+    runs-on: ubuntu-latest
+    needs: [unit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: pip install bandit pip-audit detect-secrets
+      - run: mkdir -p reports/security
+
+      - name: Initial security scan (before remediation)
+        run: |
+          bandit -r src -f json -o reports/security/bandit_before.json
+          pip-audit -r requirements.txt -f json > reports/security/pip_audit_before.json
+          detect-secrets scan > reports/security/detect_secrets_before.baseline
+
+      - name: Build remediation policy plan
+        run: |
+          python scripts/security_remediation_plan.py > reports/security/remediation_plan_stdout.json
+
+      - name: Auto-remediation attempt (safe)
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade -r requirements.txt
+          # Add controlled auto-remediation hooks here (safe deterministic fixes only)
+
+      - name: Rescan after remediation
+        run: |
+          bandit -r src -f json -o reports/security/bandit_after.json
+          pip-audit -r requirements.txt -f json > reports/security/pip_audit_after.json
+          detect-secrets scan > reports/security/detect_secrets_after.baseline
+
+      - name: Build remediation diff + enforce thresholds
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          def bandit_counts(path):
+              d=json.loads(Path(path).read_text())
+              t=((d.get('metrics') or {}).get('_totals') or {})
+              return {
+                  'high': int(t.get('SEVERITY.HIGH',0)),
+                  'medium': int(t.get('SEVERITY.MEDIUM',0)),
+                  'low': int(t.get('SEVERITY.LOW',0)),
+              }
+
+          def pip_vulns(path):
+              p=json.loads(Path(path).read_text())
+              deps=p.get('dependencies',[]) if isinstance(p,dict) else p
+              return sum(len(d.get('vulns',[])) for d in deps)
+
+          def secrets_hits(path):
+              ds=json.loads(Path(path).read_text())
+              return sum(len(v) for v in (ds.get('results') or {}).values())
+
+          b_before=bandit_counts('reports/security/bandit_before.json')
+          b_after=bandit_counts('reports/security/bandit_after.json')
+          v_before=pip_vulns('reports/security/pip_audit_before.json')
+          v_after=pip_vulns('reports/security/pip_audit_after.json')
+          s_before=secrets_hits('reports/security/detect_secrets_before.baseline')
+          s_after=secrets_hits('reports/security/detect_secrets_after.baseline')
+
+          md = Path('reports/security/security_remediation_report.md')
+          md.write_text(
+              "# Security Remediation Report\n\n"
+              "## Before\n"
+              f"- Bandit: high={b_before['high']}, medium={b_before['medium']}, low={b_before['low']}\n"
+              f"- pip-audit vulns: {v_before}\n"
+              f"- detect-secrets hits: {s_before}\n\n"
+              "## After\n"
+              f"- Bandit: high={b_after['high']}, medium={b_after['medium']}, low={b_after['low']}\n"
+              f"- pip-audit vulns: {v_after}\n"
+              f"- detect-secrets hits: {s_after}\n\n"
+              "## Delta\n"
+              f"- Bandit high delta: {b_after['high']-b_before['high']}\n"
+              f"- pip-audit delta: {v_after-v_before}\n"
+              f"- detect-secrets delta: {s_after-s_before}\n"
+          )
+          print(md.read_text())
+
+          # Fail policy: final state must have no high vulns/secrets/dependency vulns
+          if b_after['high'] > 0 or v_after > 0 or s_after > 0:
+              sys.exit(1)
+          PY
+
+      - name: Publish PR security summary
+        run: |
+          cat reports/security/security_remediation_report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: reports/security
+
+  deploy_staging:
+    runs-on: ubuntu-latest
+    needs: [unit, integration, e2e_playwright, security]
+    environment: staging
+    steps:
+      - run: echo "Deploying to staging..."
+
+  deploy_prod:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    needs: deploy_staging
+    environment: production
+    steps:
+      - run: echo "Deploying to production..."

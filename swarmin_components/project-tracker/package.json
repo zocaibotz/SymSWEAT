@@ -1,0 +1,32 @@
+{
+  "name": "swarminsym-project-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive web application to track each phase of every SWARMINSYM project from prompt to deployment, displaying all details including debugging, problems, resolutions, and AI decisions in an intuitive visual timeline with professional UX.",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --runInBand --testPathIgnorePatterns=/e2e/",
+    "start": "node src/server.js",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:all": "npm test && npm run test:e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zocaibotz/swarminsym-project-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zocaibotz/swarminsym-project-tracker/issues"
+  },
+  "homepage": "https://github.com/zocaibotz/swarminsym-project-tracker#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2",
+    "@playwright/test": "^1.54.2"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "timestamp_utc": "2026-02-28T01:55:33Z",
+  "project_id": "runset-03",
+  "project_dir": "projects/northstar-runset/runset-03",
+  "steps": 29,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 2,
+      "node": "req_master_interview",
+      "next_agent": "sdd_specify"
+    },
+    {
+      "step": 3,
+      "node": "sdd_specify",
+      "next_agent": "sdd_plan"
+    },
+    {
+      "step": 4,
+      "node": "sdd_plan",
+      "next_agent": "sdd_tasks"
+    },
+    {
+      "step": 5,
+      "node": "sdd_tasks",
+      "next_agent": "architect"
+    },
+    {
+      "step": 6,
+      "node": "architect",
+      "next_agent": "pixel"
+    },
+    {
+      "step": 7,
+      "node": "pixel",
+      "next_agent": "frontman"
+    },
+    {
+      "step": 8,
+      "node": "frontman",
+      "next_agent": "design_approval_gate"
+    },
+    {
+      "step": 9,
+      "node": "design_approval_gate",
+      "next_agent": "tdd_orchestrator"
+    },
+    {
+      "step": 10,
+      "node": "tdd_orchestrator",
+      "next_agent": "unit_test_author"
+    },
+    {
+      "step": 11,
+      "node": "unit_test_author",
+      "next_agent": "integration_test_author"
+    },
+    {
+      "step": 12,
+      "node": "integration_test_author",
+      "next_agent": "playwright_test_author"
+    },
+    {
+      "step": 13,
+      "node": "playwright_test_author",
+      "next_agent": "test_readiness_gate"
+    },
+    {
+      "step": 14,
+      "node": "test_readiness_gate",
+      "next_agent": "github_bootstrap"
+    },
+    {
+      "step": 15,
+      "node": "github_bootstrap",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 16,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 17,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 18,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 19,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 20,
+      "node": "codesmith",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 21,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 22,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 23,
+      "node": "pipeline",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 24,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 25,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 26,
+      "node": "pipeline",
+      "next_agent": "codesmith"
+    },
+    {
+      "step": 27,
+      "node": "codesmith",
+      "next_agent": "gatekeeper"
+    },
+    {
+      "step": 28,
+      "node": "gatekeeper",
+      "next_agent": "pipeline"
+    },
+    {
+      "step": 29,
+      "node": "pipeline",
+      "next_agent": "__end__"
+    }
+  ],
+  "final_next_agent": "__end__",
+  "run_id": "run_2026-02-28T01-53-24Z_f440cf"
+}

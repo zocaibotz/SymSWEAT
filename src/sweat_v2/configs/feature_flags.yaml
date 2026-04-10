@@ -1,0 +1,4 @@
+sweat_v2:
+  enabled: false
+  shadow_mode: true
+  cutover_stage: planning

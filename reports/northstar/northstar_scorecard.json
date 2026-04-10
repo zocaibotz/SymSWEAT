@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-02-28T08:00:59Z",
+  "north_star_grade": "GREEN",
+  "pass_rate": 100.0,
+  "median_steps": 1,
+  "top_fail_reasons": {},
+  "total_runs": 5,
+  "passed_runs": 5
+}

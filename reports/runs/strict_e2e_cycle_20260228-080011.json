@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-02-28T08:00:11Z",
+  "project_id": "overnight-e2e-01",
+  "project_dir": "projects/overnight-e2e-01",
+  "steps": 1,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "__end__"
+    }
+  ],
+  "final_next_agent": "__end__",
+  "run_id": "run_2026-02-27T15-56-30Z_66bd36"
+}

@@ -1,0 +1,29 @@
+{
+  "apply": false,
+  "rows": [
+    {
+      "project": "projects/hello-sweat",
+      "created_or_missing": [
+        "project_state.json",
+        "run_index.json",
+        "run_events.jsonl"
+      ]
+    },
+    {
+      "project": "projects/northstar-runset",
+      "created_or_missing": [
+        "project_state.json",
+        "run_index.json",
+        "run_events.jsonl"
+      ]
+    },
+    {
+      "project": "projects/overnight-e2e-01",
+      "created_or_missing": []
+    },
+    {
+      "project": "projects/test-001",
+      "created_or_missing": []
+    }
+  ]
+}

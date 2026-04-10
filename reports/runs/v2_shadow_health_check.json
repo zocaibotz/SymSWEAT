@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "shadow_mode": true,
+  "shadow_report_path": "reports/runs/v2_shadow_report.jsonl",
+  "rows": 1,
+  "ok": true
+}

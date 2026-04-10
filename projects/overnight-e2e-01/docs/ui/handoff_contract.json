@@ -1,0 +1,10 @@
+{
+  "input": "docs/ux/package.json",
+  "output": "src/App.jsx",
+  "props_contract": [
+    "title",
+    "items",
+    "onPrimaryAction"
+  ],
+  "style_tokens_source": "docs/ux/package.json#style_tokens"
+}

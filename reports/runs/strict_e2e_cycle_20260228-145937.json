@@ -1,0 +1,810 @@
+{
+  "timestamp_utc": "2026-02-28T14:59:37Z",
+  "project_id": "command-center-dashboard",
+  "project_dir": "projects/command-center-dashboard",
+  "steps": 160,
+  "route": [
+    {
+      "step": 1,
+      "node": "zocai",
+      "next_agent": "sdd_specify"
+    },
+    {
+      "step": 2,
+      "node": "sdd_specify",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 3,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 4,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 5,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 6,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 7,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 8,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 9,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 10,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 11,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 12,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 13,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 14,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 15,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 16,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 17,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 18,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 19,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 20,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 21,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 22,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 23,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 24,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 25,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 26,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 27,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 28,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 29,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 30,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 31,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 32,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 33,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 34,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 35,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 36,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 37,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 38,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 39,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 40,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 41,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 42,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 43,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 44,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 45,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 46,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 47,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 48,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 49,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 50,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 51,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 52,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 53,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 54,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 55,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 56,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 57,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 58,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 59,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 60,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 61,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 62,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 63,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 64,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 65,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 66,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 67,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 68,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 69,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 70,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 71,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 72,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 73,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 74,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 75,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 76,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 77,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 78,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 79,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 80,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 81,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 82,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 83,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 84,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 85,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 86,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 87,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 88,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 89,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 90,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 91,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 92,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 93,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 94,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 95,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 96,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 97,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 98,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 99,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 100,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 101,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 102,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 103,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 104,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 105,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 106,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 107,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 108,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 109,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 110,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 111,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 112,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 113,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 114,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 115,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 116,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 117,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 118,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 119,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 120,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 121,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 122,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 123,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 124,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 125,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 126,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 127,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 128,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 129,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 130,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 131,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 132,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 133,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 134,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 135,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 136,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 137,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 138,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 139,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 140,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 141,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 142,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 143,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 144,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 145,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 146,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 147,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 148,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 149,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 150,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 151,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 152,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 153,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 154,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 155,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 156,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 157,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 158,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 159,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    },
+    {
+      "step": 160,
+      "node": "req_master_interview",
+      "next_agent": "req_master_interview"
+    }
+  ],
+  "final_next_agent": "req_master_interview",
+  "run_id": "run_2026-02-28T08-40-54Z_3e03d3"
+}

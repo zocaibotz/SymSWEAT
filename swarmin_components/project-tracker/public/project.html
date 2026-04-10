@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWARMINSYM Project Detail</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell detail-shell">
+      <header class="detail-header panel">
+        <div>
+          <a class="back-link" href="/index.html">Back to dashboard</a>
+          <p class="eyebrow">Project Detail</p>
+          <h1 id="project-title">Loading project...</h1>
+          <div id="project-meta" class="meta-row"></div>
+        </div>
+        <div class="header-actions">
+          <span id="project-status-badge" class="badge neutral">Loading</span>
+          <a id="artifact-shortcut" class="secondary-button" href="#artifact-list">Artifacts</a>
+        </div>
+      </header>
+
+      <main class="detail-grid">
+        <section class="panel timeline-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Stage Progression</h2>
+              <p class="helper-text">Select a stage to inspect decisions, problems, resolutions, and linked artifacts.</p>
+            </div>
+          </div>
+          <div id="stage-timeline" class="stage-timeline"></div>
+        </section>
+
+        <section class="panel stage-detail-panel">
+          <div class="panel-header">
+            <div>
+              <h2 id="stage-detail-title">Stage details</h2>
+              <p id="stage-detail-meta" class="helper-text"></p>
+            </div>
+          </div>
+          <div id="stage-detail-body" class="stage-detail-body"></div>
+        </section>
+
+        <section class="panel artifact-panel" id="artifact-list">
+          <div class="panel-header">
+            <div>
+              <h2>Artifacts, Phase Docs & Linear Issues</h2>
+              <p class="helper-text">Artifact links, auto-detected phase markdown docs, and Linear issue links in one place.</p>
+            </div>
+          </div>
+          <div id="artifact-cards" class="artifact-list"></div>
+        </section>
+
+        <section class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Recent Project Events</h2>
+              <p class="helper-text">Latest stage activity for this project.</p>
+            </div>
+          </div>
+          <div id="project-activity" class="activity-feed"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/project.js"></script>
+  </body>
+</html>

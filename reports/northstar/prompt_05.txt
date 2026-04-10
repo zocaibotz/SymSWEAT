@@ -1,0 +1,1 @@
+Build a personal knowledge base app with markdown notes, backlinks, and quick search. Include acceptance criteria.

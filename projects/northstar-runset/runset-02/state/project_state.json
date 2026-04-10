@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "state_version": 29,
+  "project_id": "runset-02",
+  "project_slug": "titan-genesis",
+  "lifecycle": {
+    "phase": "__end__",
+    "status": "in_progress",
+    "current_run_id": "run_2026-02-28T01-51-38Z_824069",
+    "last_updated_utc": "2026-02-28T01:53:20Z"
+  },
+  "gates": {
+    "design_approved": true,
+    "tdd_ready": true,
+    "ci_passed": false,
+    "deployment_approved": false
+  },
+  "artifacts": {
+    "spec": "projects/northstar-runset/runset-02/docs/spec/spec.md",
+    "plan": "projects/northstar-runset/runset-02/docs/spec/plan.md",
+    "tasks": "projects/northstar-runset/runset-02/docs/spec/tasks.md",
+    "architecture": "docs/SWEAT_ARCHITECTURE_AS_BUILT.md",
+    "unit_tests_plan": "projects/northstar-runset/runset-02/docs/tests/unit_test_plan.md",
+    "integration_tests_plan": "projects/northstar-runset/runset-02/docs/tests/integration_test_plan.md",
+    "playwright_tests_plan": "projects/northstar-runset/runset-02/docs/tests/playwright_test_plan.md",
+    "run_report": "reports/runs/latest_run_report.json"
+  },
+  "integrations": {
+    "linear": {
+      "project_id": null,
+      "project_url": null
+    },
+    "ci": {
+      "provider": "github_actions",
+      "last_result": "FAILED"
+    },
+    "automation": {
+      "status": "pending"
+    }
+  },
+  "memory": {
+    "last_agent": null,
+    "last_20_run_ids": [
+      "run_2026-02-28T01-51-38Z_824069"
+    ]
+  }
+}
