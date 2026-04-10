@@ -5,15 +5,17 @@ import hashlib
 import json
 import os
 import time
+import threading
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 ACTIVE_WINDOW_SECONDS = 7 * 24 * 60 * 60
-UI_PASSWORD = os.getenv("SWEAT_UI_PASSWORD", "change-me")
 UI_AUTH_COOKIE = "sweat_ui_auth"
 UI_AUTH_SALT = "sweat-monitor-ui-v1"
 
+from pydantic import BaseModel
 from fastapi import FastAPI, Form, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse, StreamingResponse
@@ -62,6 +64,50 @@ NODE_TO_STAGE = {
     "__end__": "ci_deploy_automator",
 }
 
+class NewProjectRequest(BaseModel):
+    prompt: str
+    project_id: Optional[str] = None
+
+
+def _get_users() -> Dict[str, str]:
+    users_env = os.getenv("SWEAT_USERS", "admin:change-me")
+    users = {}
+    for pair in users_env.split(","):
+        if ":" in pair:
+            u, p = pair.split(":", 1)
+            users[u.strip()] = p.strip()
+    return users
+
+
+def _create_auth_cookie(username: str) -> str:
+    import base64
+    return base64.b64encode(f"{username}:{UI_AUTH_SALT}".encode("utf-8")).decode("utf-8")
+
+
+def _get_authenticated_user(request: Request) -> Optional[str]:
+    cookie = request.cookies.get(UI_AUTH_COOKIE)
+    if not cookie:
+        return None
+    import base64
+    try:
+        decoded = base64.b64decode(cookie).decode("utf-8")
+        if decoded.endswith(f":{UI_AUTH_SALT}"):
+            return decoded.split(":")[0]
+    except Exception:
+        pass
+    return None
+
+
+def _is_authenticated(request: Request) -> bool:
+    return _get_authenticated_user(request) is not None
+
+
+def _require_auth(request: Request) -> str:
+    user = _get_authenticated_user(request)
+    if not user:
+        raise HTTPException(status_code=401, detail="Unauthorized")
+    return user
+
 
 def _json_load(path: Path, default: Any) -> Any:
     if not path.exists():
@@ -109,11 +155,16 @@ def _normalize_stage(raw: Optional[str]) -> str:
     return NODE_TO_STAGE.get((raw or "").strip(), "requirement_master")
 
 
-def _project_paths(project_id: str) -> Dict[str, Path]:
+def _project_paths(project_id: str, create: bool = False) -> Dict[str, Path]:
     root = PROJECTS_ROOT / project_id
     if not root.exists() or not root.is_dir():
-        raise HTTPException(status_code=404, detail=f"Unknown project: {project_id}")
+        if create:
+            root.mkdir(parents=True, exist_ok=True)
+        else:
+            raise HTTPException(status_code=404, detail=f"Unknown project: {project_id}")
     state_dir = root / "state"
+    if create:
+        state_dir.mkdir(parents=True, exist_ok=True)
     return {
         "root": root,
         "state": state_dir,
@@ -141,20 +192,6 @@ def _parse_utc(ts: Optional[str]) -> Optional[datetime]:
         return datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
     except Exception:
         return None
-
-
-def _auth_token() -> str:
-    raw = f"{UI_PASSWORD}:{UI_AUTH_SALT}".encode("utf-8")
-    return hashlib.sha256(raw).hexdigest()
-
-
-def _is_authenticated(request: Request) -> bool:
-    return request.cookies.get(UI_AUTH_COOKIE) == _auth_token()
-
-
-def _require_auth(request: Request) -> None:
-    if not _is_authenticated(request):
-        raise HTTPException(status_code=401, detail="Unauthorized")
 
 
 def _is_active(latest_status: str, last_updated_utc: Optional[str]) -> bool:
@@ -404,6 +441,22 @@ def _project_details(project_id: str) -> Dict[str, Any]:
     }
 
 
+def _run_project_background(prompt: str, project_id: str):
+    try:
+        from src.main import build_graph
+        from langchain_core.messages import HumanMessage
+        graph = build_graph()
+        initial_state = {
+            "messages": [HumanMessage(content=prompt)],
+            "project_id": project_id,
+            "next_agent": "req_master"
+        }
+        for _ in graph.stream(initial_state):
+            pass
+    except Exception as e:
+        print(f"Background run failed for {project_id}: {e}")
+
+
 def create_app() -> FastAPI:
     app = FastAPI(title="SWEAT Monitoring API", version="1.0.0")
     app.add_middleware(
@@ -426,8 +479,9 @@ def create_app() -> FastAPI:
                 <!doctype html><html><body style='font-family:Arial;background:#0a1120;color:#e7eefb;padding:40px'>
                 <h2>SWEAT Command Center Login</h2>
                 <form method='post' action='/ui/login'>
-                  <input type='password' name='password' placeholder='Password' style='padding:10px;border-radius:8px;border:1px solid #31476a;background:#16233b;color:#e7eefb' />
-                  <button type='submit' style='margin-left:8px;padding:10px 14px;border:0;border-radius:8px;background:#5ea3ff;color:white'>Enter</button>
+                  <input type='text' name='username' placeholder='Username' style='padding:10px;border-radius:8px;border:1px solid #31476a;background:#16233b;color:#e7eefb;margin-bottom:8px;display:block;' />
+                  <input type='password' name='password' placeholder='Password' style='padding:10px;border-radius:8px;border:1px solid #31476a;background:#16233b;color:#e7eefb;margin-bottom:8px;display:block;' />
+                  <button type='submit' style='padding:10px 14px;border:0;border-radius:8px;background:#5ea3ff;color:white;display:block;'>Enter</button>
                 </form>
                 </body></html>
                 """
@@ -442,11 +496,12 @@ def create_app() -> FastAPI:
         return FileResponse(Path(__file__).with_name("monitoring_ui.html"))
 
     @app.post("/ui/login")
-    def ui_login(password: str = Form(...)):
-        if password != UI_PASSWORD:
-            return HTMLResponse("Invalid password", status_code=401)
+    def ui_login(username: str = Form(...), password: str = Form(...)):
+        users = _get_users()
+        if users.get(username) != password:
+            return HTMLResponse("Invalid username or password", status_code=401)
         response = RedirectResponse(url="/ui", status_code=303)
-        response.set_cookie(UI_AUTH_COOKIE, _auth_token(), httponly=True, samesite="lax")
+        response.set_cookie(UI_AUTH_COOKIE, _create_auth_cookie(username), httponly=True, samesite="lax")
         return response
 
     @app.post("/ui/logout")
@@ -454,6 +509,23 @@ def create_app() -> FastAPI:
         response = RedirectResponse(url="/ui", status_code=303)
         response.delete_cookie(UI_AUTH_COOKIE)
         return response
+
+    @app.post("/api/monitoring/projects/new")
+    def new_project(payload: NewProjectRequest, request: Request) -> Dict[str, Any]:
+        username = _require_auth(request)
+        prompt = payload.prompt.strip()
+        if not prompt:
+            raise HTTPException(status_code=400, detail="Prompt is required")
+            
+        project_id = payload.project_id
+        if not project_id or not project_id.strip():
+            project_id = f"proj-{uuid.uuid4().hex[:8]}"
+            
+        # Pre-create the directory so it shows up in UI immediately
+        paths = _project_paths(project_id, create=True)
+        
+        threading.Thread(target=_run_project_background, args=(prompt, project_id), daemon=True).start()
+        return {"ok": True, "project_id": project_id}
 
     @app.get("/api/monitoring/projects")
     def list_projects(request: Request) -> Dict[str, Any]:
@@ -531,7 +603,7 @@ def create_app() -> FastAPI:
             "question": question,
             "answer": answer,
             "answered_at_utc": now,
-            "author": str(payload.get("author") or "operator_ui"),
+            "author": _require_auth(request),
         }
         paths["answers"].parent.mkdir(parents=True, exist_ok=True)
         with paths["answers"].open("a", encoding="utf-8") as f:

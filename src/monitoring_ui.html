@@ -28,6 +28,15 @@
   <header><strong>SWEAT Command Center UI</strong> <span class="muted">(fast shippable live monitor)</span></header>
   <div class="wrap">
     <div class="card" style="margin-bottom:12px;">
+      <h3 style="margin-top:0">New Project Launchpad</h3>
+      <textarea id="new-project-prompt" placeholder="Describe your software idea here..." style="width:100%; height:80px; padding:10px; border-radius:8px; border:1px solid #31476a; background:#16233b; color:#e7eefb; margin-bottom:8px; box-sizing:border-box;"></textarea>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <input type="text" id="new-project-id" placeholder="Optional Project ID" style="padding:10px; border-radius:8px; border:1px solid #31476a; background:#16233b; color:#e7eefb; width:200px;" />
+        <button onclick="launchProject()" style="background:#26c281; padding:10px 20px; font-weight:bold;">Launch</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px;">
       <button onclick="load()">Refresh</button>
       <form method="post" action="/ui/logout" style="display:inline; margin-left:8px;">
         <button type="submit" style="background:#334155;">Logout</button>
@@ -111,6 +120,29 @@ function healthOf(p){
 }
 function stageOfNode(node){ return nodeToStage[node] || 'requirement_master'; }
 function goHome(){ window.location.href = '/ui'; }
+
+async function launchProject(){
+  const prompt = document.getElementById('new-project-prompt').value;
+  const projectId = document.getElementById('new-project-id').value;
+  if (!prompt.trim()) { alert('Please enter a software idea prompt.'); return; }
+  
+  document.getElementById('new-project-prompt').disabled = true;
+  const res = await fetch('/api/monitoring/projects/new', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ prompt: prompt, project_id: projectId })
+  });
+  
+  if (!res.ok) {
+    const data = await res.json().catch(()=>({}));
+    alert('Failed to launch: ' + (data.detail || res.status));
+    document.getElementById('new-project-prompt').disabled = false;
+    return;
+  }
+  
+  const data = await res.json();
+  window.location.href = '/ui/project/' + encodeURIComponent(data.project_id);
+}
 
 function setTab(tab){
   state.activeTab = tab;
