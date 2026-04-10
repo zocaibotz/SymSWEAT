@@ -347,6 +347,13 @@ class LinearClient:
                 priority
                 state { id name type }
                 assignee { id name email }
+                relations {
+                  nodes {
+                    type
+                    issue { id state { type } }
+                    relatedIssue { id state { type } }
+                  }
+                }
               }
             }
           }

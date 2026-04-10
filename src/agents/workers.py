@@ -1311,11 +1311,10 @@ def deployer_node(state: ProjectState) -> Dict[str, Any]:
 
 def sprint_executor_node(state: ProjectState) -> Dict[str, Any]:
     """
-    Autonomous sprint loop v2:
-    - priority-aware selection
-    - WIP limit guard
-    - multi-issue cycle per run
-    - status digest summary
+    Autonomous sprint loop v3 (Milestone 2 & 3):
+    - DAG-aware selection (filters out blocked issues)
+    - Single-issue cycle per run routed to specialized agents
+    - Dynamic routing based on issue type
     """
     project_id = state.get("linear_project_id")
     if not project_id:
@@ -1334,71 +1333,74 @@ def sprint_executor_node(state: ProjectState) -> Dict[str, Any]:
         }
 
     issues = listed.get("issues", [])
-    wip_limit = int(os.getenv("SWEAT_SPRINT_WIP_LIMIT", "1"))
-    max_per_run = int(os.getenv("SWEAT_SPRINT_MAX_ISSUES_PER_RUN", "2"))
 
-    in_progress = [i for i in issues if ((i.get("state") or {}).get("type") or "").lower() == "started"]
-    if len(in_progress) >= wip_limit:
+    # Filter to unstarted/backlog/triage/started
+    def is_actionable(it: Dict[str, Any]):
+        st = ((it.get("state") or {}).get("type") or "").lower()
+        return st in {"backlog", "unstarted", "triage", "started"}
+
+    actionable = [i for i in issues if is_actionable(i)]
+
+    # Filter out blocked issues
+    unblocked = []
+    for it in actionable:
+        is_blocked = False
+        rels = it.get("relations", {}).get("nodes", [])
+        for rel in rels:
+            # If relation type is blocks and 'relatedIssue' is THIS issue (it.get("id")),
+            # then 'issue' is the blocker. If the blocker is not completed/canceled, we are blocked.
+            if rel.get("type") == "blocks":
+                blocker = None
+                if rel.get("relatedIssue", {}).get("id") == it.get("id"):
+                    blocker = rel.get("issue")
+                if blocker:
+                    st = (blocker.get("state") or {}).get("type", "").lower()
+                    if st not in {"completed", "canceled"}:
+                        is_blocked = True
+                        break
+        if not is_blocked:
+            unblocked.append(it)
+
+    if not unblocked:
         return {
-            "messages": [AIMessage(content=f"Sprint executor paused: WIP limit reached ({len(in_progress)}/{wip_limit}).")],
+            "messages": [AIMessage(content="Sprint executor: no unblocked actionable issues found in the DAG.")],
             "sprint_execution_log": [],
             "sprint_executor_completed": True,
             "next_agent": "__end__",
         }
 
     def priority_key(it: Dict[str, Any]):
-        # Linear: lower numeric values are typically higher priority (1 urgent), 0 often unset.
         p = it.get("priority")
         if p in (None, 0):
             p = 999
         return int(p)
 
-    actionable = [
-        i for i in issues
-        if ((i.get("state") or {}).get("type") or "").lower() in {"backlog", "unstarted", "triage", "started"}
-    ]
-    actionable.sort(key=priority_key)
+    unblocked.sort(key=priority_key)
+    target = unblocked[0]
 
-    allowance = max(0, wip_limit - len(in_progress))
-    budget = min(max_per_run, allowance if allowance > 0 else 0)
-    targets = actionable[:budget]
+    ident = target.get("identifier")
+    title = target.get("title", "").lower()
+    
+    linear.transition_issue(ident, "started")
+    note = "SWEAT sprint executor picked up this unblocked issue for autonomous execution."
+    if target.get("id"):
+        linear.comment_issue(issue_id=target.get("id"), body=note)
 
-    if not targets:
-        return {
-            "messages": [AIMessage(content="Sprint executor: no actionable issues within current WIP budget.")],
-            "sprint_execution_log": [],
-            "sprint_executor_completed": True,
-            "next_agent": "__end__",
-        }
+    # Route based on type
+    if "architect" in title:
+        next_agent = "architect"
+    elif "integration testing" in title or "test" in title:
+        next_agent = "pipeline"
+    else:
+        next_agent = "codesmith"
 
-    log = []
-    processed = []
-    for target in targets:
-        ident = target.get("identifier")
-        if not ident:
-            continue
-
-        r1 = linear.transition_issue(ident, "started")
-        log.append({"identifier": ident, "action": "started", "result": r1})
-
-        note = "SWEAT sprint executor processed this issue in autonomous loop (v2 priority/WIP mode)."
-        if target.get("id"):
-            linear.comment_issue(issue_id=target.get("id"), body=note)
-
-        r2 = linear.close_issue(ident)
-        log.append({"identifier": ident, "action": "completed", "result": r2})
-        processed.append(ident)
-
-    digest = (
-        f"Sprint executor processed {len(processed)} issue(s): {', '.join(processed)} | "
-        f"WIP limit={wip_limit}, max_per_run={max_per_run}"
-    )
+    digest = f"Sprint executor routed {ident} ('{target.get('title')}') to {next_agent}."
 
     return {
         "messages": [AIMessage(content=digest)],
-        "sprint_execution_log": log,
+        "sprint_execution_log": [{"identifier": ident, "action": "started_and_routed", "agent": next_agent}],
         "sprint_executor_completed": True,
-        "next_agent": "__end__",
+        "next_agent": next_agent,
     }
 
 
