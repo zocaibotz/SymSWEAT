@@ -498,16 +498,18 @@ def create_app() -> FastAPI:
     @app.post("/ui/login")
     def ui_login(username: str = Form(...), password: str = Form(...)):
         users = _get_users()
+        username = username.strip()
+        password = password.strip()
         if users.get(username) != password:
             return HTMLResponse("Invalid username or password", status_code=401)
         response = RedirectResponse(url="/ui", status_code=303)
-        response.set_cookie(UI_AUTH_COOKIE, _create_auth_cookie(username), httponly=True, samesite="lax")
+        response.set_cookie(UI_AUTH_COOKIE, _create_auth_cookie(username), httponly=True, samesite="lax", path="/")
         return response
 
     @app.post("/ui/logout")
     def ui_logout():
         response = RedirectResponse(url="/ui", status_code=303)
-        response.delete_cookie(UI_AUTH_COOKIE)
+        response.delete_cookie(UI_AUTH_COOKIE, path="/")
         return response
 
     @app.post("/api/monitoring/projects/new")
