@@ -31,8 +31,8 @@ This document outlines the 4-phase integration of **SWEAT** and **SWARMINSYM** i
 - [x] Commit to GitHub (`Milestone 3 Completed`).
 
 ## Milestone 4: Unified Observability
-- [ ] Deprecate SWARMINSYM's local per-attempt JSON ledgers (`projects/symphony/runs/...`).
-- [ ] Route all telemetry, log dumps, and state transitions into SymSWEAT's existing `monitoring_api.py` (FastAPI) and dashboard layer.
-- [ ] Achieve a single pane of glass for all autonomous runs.
-- [ ] Run a complete end-to-end test of the unified pipeline.
-- [ ] Commit to GitHub (`Milestone 4 Completed`).
+- [x] Deprecate SWARMINSYM's local per-attempt JSON ledgers (`projects/symphony/runs/...`).
+- [x] Route all telemetry, log dumps, and state transitions into SymSWEAT's existing `monitoring_api.py` (FastAPI) and dashboard layer.
+- [x] Achieve a single pane of glass for all autonomous runs.
+- [x] Run a complete end-to-end test of the unified pipeline.
+- [x] Commit to GitHub (`Milestone 4 Completed`).

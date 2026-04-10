@@ -1333,3 +1333,5 @@ However, I need a few t...
 2026-03-06 00:43:12,413 - SWEAT - INFO - Gatekeeper: reviewing diff.
 2026-03-06 00:43:20,231 - SWEAT - INFO - PipeLine: starting CI.
 2026-03-06 00:51:05,589 - SWEAT - INFO - Architech: designing system.
+2026-04-10 13:27:33,755 - SWEAT - INFO - ReqMaster: analyzing input.
+2026-04-10 13:27:41,836 - SWEAT - INFO - ReqMaster produced partial requirements (needs revision): ['missing_required_fields']

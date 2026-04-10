@@ -1,57 +1,17 @@
 {
-  "project_id": "calorie-photo-002",
-  "run_id": "run_2026-03-04T05-50-27Z_65f680",
+  "project_id": "claw-node-monitor-123",
+  "run_id": "run_2026-04-10T13-27-33Z_0e5692",
   "events": [
     {
       "node": "zocai",
       "duration_ms": 0,
-      "next_agent": "sdd_specify"
+      "next_agent": "req_master_interview"
     },
     {
-      "node": "sdd_specify",
-      "duration_ms": 49,
-      "next_agent": "sdd_plan"
-    },
-    {
-      "node": "sdd_plan",
-      "duration_ms": 1,
-      "next_agent": "sdd_tasks"
-    },
-    {
-      "node": "sdd_tasks",
-      "duration_ms": 1,
-      "next_agent": "architect"
-    },
-    {
-      "node": "architect",
-      "duration_ms": 37251,
-      "next_agent": "pixel"
-    },
-    {
-      "node": "pixel",
-      "duration_ms": 36291,
-      "next_agent": "frontman"
-    },
-    {
-      "node": "frontman",
-      "duration_ms": 69151,
-      "next_agent": "design_approval_gate"
-    },
-    {
-      "node": "design_approval_gate",
-      "duration_ms": 3,
-      "next_agent": "tdd_orchestrator"
-    },
-    {
-      "node": "tdd_orchestrator",
-      "duration_ms": 0,
-      "next_agent": "unit_test_author"
-    },
-    {
-      "node": "unit_test_author",
-      "duration_ms": 4,
-      "next_agent": "integration_test_author"
+      "node": "req_master_interview",
+      "duration_ms": 8081,
+      "next_agent": "__end__"
     }
   ],
-  "updated_at_epoch": 1772758408
+  "updated_at_epoch": 1775827661
 }

@@ -1,0 +1,18 @@
+{
+  "requirements_interview_status": "awaiting_human",
+  "requirements_revision_reasons": [
+    "missing_requirements"
+  ],
+  "next_agent": "__end__",
+  "run_id": "run_2026-04-10T13-27-33Z_0e5692",
+  "requirements_open_questions": [
+    "What business outcome should this feature achieve?",
+    "What is in-scope and explicitly out-of-scope?",
+    "What are the acceptance criteria we must test?",
+    "Any constraints (security/performance/deadline/tech stack)?"
+  ],
+  "run_started": true,
+  "project_id": "claw-node-monitor-123",
+  "project_state_version": 1,
+  "snapshot_kind": "resume"
+}

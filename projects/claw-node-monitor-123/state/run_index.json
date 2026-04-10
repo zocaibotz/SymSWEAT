@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "claw-node-monitor-123",
+  "runs": {
+    "run_2026-04-10T13-27-33Z_0e5692": {
+      "status": "completed",
+      "started_at_utc": "2026-04-10T13:27:33Z",
+      "ended_at_utc": "2026-04-10T13:27:43Z",
+      "last_seq": 10,
+      "last_event_id": "evt_000010_310b",
+      "last_node": "zocai",
+      "idempotency_keys": {
+        "run_2026-04-10T13-27-33Z_0e5692:zocai:enter:a7d3d37754ee4770ea794bee88679ec712f8289cec58006335e5bbf2f5fe3e3f": "evt_000002_f597",
+        "run_2026-04-10T13-27-33Z_0e5692:zocai:route:req_master_interview:a7d3d37754ee4770ea794bee88679ec712f8289cec58006335e5bbf2f5fe3e3f": "evt_000003_fe7e",
+        "run_2026-04-10T13-27-33Z_0e5692:zocai:exit:a7d3d37754ee4770ea794bee88679ec712f8289cec58006335e5bbf2f5fe3e3f": "evt_000004_4eda",
+        "run_2026-04-10T13-27-33Z_0e5692:zocai:snapshot:1": "evt_000005_897a",
+        "run_2026-04-10T13-27-33Z_0e5692:req_master_interview:enter:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000006_ca14",
+        "run_2026-04-10T13-27-33Z_0e5692:req_master_interview:route:__end__:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000007_bfa5",
+        "run_2026-04-10T13-27-33Z_0e5692:req_master_interview:exit:4ad4066239dcb1ef02b440a5ba4af9172f286dfb8ea7a4282e878507890b79a5": "evt_000008_2c1e",
+        "run_2026-04-10T13-27-33Z_0e5692:req_master_interview:snapshot:2": "evt_000009_e691"
+      }
+    }
+  },
+  "latest_run_id": "run_2026-04-10T13-27-33Z_0e5692",
+  "updated_at_utc": "2026-04-10T13:27:43Z"
+}
