@@ -341,6 +341,11 @@ def _project_summary(project_id: str) -> Dict[str, Any]:
     last_updated_utc = lifecycle.get("last_updated_utc") or (events[-1].get("ts_utc") if events else None)
     completed = current_stage == PIPELINE_STAGES[-1] and latest_status in {"completed", "success"}
     active = _is_active(latest_status, last_updated_utc)
+    
+    if interview.get("status") == "awaiting_human":
+        active = True
+        latest_status = "awaiting_human"
+        
     lifecycle_bucket = "active" if active else "archived"
 
     return {
@@ -498,10 +503,13 @@ def create_app() -> FastAPI:
     @app.post("/ui/login")
     def ui_login(username: str = Form(...), password: str = Form(...)):
         users = _get_users()
+        print(f"[LOGIN ATTEMPT] username: '{username}', password: '{password}'")
         username = username.strip()
         password = password.strip()
         if users.get(username) != password:
+            print(f"[LOGIN FAILED] expected: '{users.get(username)}', got: '{password}'")
             return HTMLResponse("Invalid username or password", status_code=401)
+        print(f"[LOGIN SUCCESS] username: '{username}'")
         response = RedirectResponse(url="/ui", status_code=303)
         response.set_cookie(UI_AUTH_COOKIE, _create_auth_cookie(username), httponly=True, samesite="lax", path="/")
         return response

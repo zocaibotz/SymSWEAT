@@ -1,8 +1,8 @@
 {
-  "run_id": "run_2026-04-11T02-53-46Z_04de0d",
-  "project_id": "proj-aa4f9fc0",
+  "run_id": "run_2026-04-11T05-52-43Z_a332e9",
+  "project_id": "KidsFunTodo",
   "cwd": "/home/claw-admin/.openclaw/workspace/projects/SymSWEAT",
-  "workspace_path": "projects/proj-aa4f9fc0",
+  "workspace_path": "projects/KidsFunTodo",
   "linear": {
     "has_api_key": true,
     "has_team_id": true
@@ -12,5 +12,5 @@
     "has_openai_api_key": true,
     "has_anthropic_api_key": true
   },
-  "ts": 1775876026
+  "ts": 1775886763
 }
