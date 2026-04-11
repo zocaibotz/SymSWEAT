@@ -9,6 +9,7 @@ RESUME_KEYS = {
     "requirements",
     "requirements_interview_status",
     "requirements_open_questions",
+    "requirements_questions_asked",
     "requirements_revision_reasons",
     "requirements_revision_count",
     "next_agent",

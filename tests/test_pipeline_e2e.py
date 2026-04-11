@@ -18,26 +18,52 @@ Test strategy:
 
 from __future__ import annotations
 
+import base64
 import json
 import os
 import time
 from typing import Generator
 
 import pytest
+import requests
 from playwright.sync_api import Page, expect as playwright_expect
 
-from tests.conftest import _wait_for_project_dir  # noqa: F401
+from tests.conftest import app_server, graph_run  # noqa: F401
+
+
+import base64
+
+# ---------------------------------------------------------------------------
+# Auth helpers
+# ---------------------------------------------------------------------------
+
+_UI_AUTH_COOKIE = "sweat_ui_auth"
+_UI_AUTH_SALT = "sweat-monitor-ui-v1"
+
+
+def _make_auth_cookie(username: str) -> str:
+    val = f"{username}:{_UI_AUTH_SALT}"
+    return base64.b64encode(val.encode()).decode()
+
+
+def _auth_get(url: str, username: str = "admin") -> requests.Response:
+    """Authenticated GET — needed for tests that call the API directly."""
+    cookie = _make_auth_cookie(username)
+    return requests.get(url, cookies={_UI_AUTH_COOKIE: cookie}, timeout=10)
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
-def do_login(page: Page, base: str) -> None:
-    page.goto(f"{base}/ui/login")
-    page.fill('input[name="password"]', "testpass123")
+def do_login(page: Page, base: str, username: str = "admin", password: str = "testpass123") -> None:
+    """Navigate to /ui (secured root), wait for redirect to login, fill creads, submit."""
+    page.goto(f"{base}/ui")
+    page.wait_for_url(f"{base}/ui")
+    page.fill('input[name="username"]', username)
+    page.fill('input[name="password"]', password)
     page.click('button[type="submit"]')
-    page.wait_for_url(f"{base}/ui/")
+    page.wait_for_url(f"{base}/ui")
 
 
 def poll_project_state(base: str, project_id: str, timeout: float = 300, interval: float = 10) -> dict:
@@ -47,17 +73,16 @@ def poll_project_state(base: str, project_id: str, timeout: float = 300, interva
 
     Returns the final state dict. Raises if the project never appears after `timeout`.
     """
-    import urllib.request
-
     url = f"{base}/api/monitoring/projects/{project_id}"
     deadline = time.time() + timeout
     while time.time() < deadline:
         try:
-            resp = urllib.request.urlopen(url, timeout=5)
-            data = json.loads(resp.read())
-            # Project is registered once it has a current_stage
-            if data.get("current_stage"):
-                return data
+            resp = _auth_get(url)
+            if resp.status_code == 200:
+                data = json.loads(resp.text)
+                # Project is registered once it has a current_stage
+                if data.get("current_stage"):
+                    return data
         except Exception:
             pass
         time.sleep(interval)
@@ -74,18 +99,17 @@ def wait_for_stage(
     Returns the state dict at the moment the stage is detected (or the last
     state if it times out — test should assert on the returned value).
     """
-    import urllib.request
-
     url = f"{base}/api/monitoring/projects/{project_id}"
     deadline = time.time() + timeout
     last_state = {}
     while time.time() < deadline:
         try:
-            resp = urllib.request.urlopen(url, timeout=5)
-            last_state = json.loads(resp.read())
-            stage = last_state.get("current_stage", "")
-            if stage in target_stages:
-                return last_state
+            resp = _auth_get(url)
+            if resp.status_code == 200:
+                last_state = json.loads(resp.text)
+                stage = last_state.get("current_stage", "")
+                if stage in target_stages:
+                    return last_state
         except Exception:
             pass
         time.sleep(interval)
@@ -106,10 +130,37 @@ class TestRequirementMaster:
         project_id = graph_run["project_id"]
 
         do_login(page, app_server)
-        page.goto(f"{app_server}/ui/project/{project_id}")
-        page.wait_for_timeout(3000)
 
-        # Should show the interview section
+        # Debug: print ALL API fields for this project
+        resp = _auth_get(f"{app_server}/api/monitoring/projects/{project_id}")
+        api_data = json.loads(resp.text)
+        print(f"[DEBUG] Full API response: {json.dumps(api_data, indent=2)}")
+
+        current_stage = api_data.get("current_stage", "")
+        interview_data = api_data.get("interview", {})
+        pending = interview_data.get("pending_questions", []) if isinstance(interview_data, dict) else []
+        print(f"[DEBUG] stage={current_stage}, pending={pending}")
+
+        # Navigate to the project detail page
+        page.goto(f"{app_server}/ui/project/{project_id}")
+
+        # Poll until the interview section appears
+        url = f"{app_server}/api/monitoring/projects/{project_id}/interview"
+        interview_ready = False
+        for _ in range(60):
+            try:
+                resp = _auth_get(url)
+                data = json.loads(resp.text)
+                if data.get("pending_questions"):
+                    interview_ready = True
+                    break
+            except Exception:
+                pass
+            time.sleep(1)
+
+        assert interview_ready, f"Interview never became ready for project {project_id}"
+
+        # Now the section should be visible
         section = page.locator("#interview-section")
         playwright_expect(section).to_be_visible()
 
@@ -128,7 +179,19 @@ class TestRequirementMaster:
         project_id = graph_run["project_id"]
         do_login(page, app_server)
         page.goto(f"{app_server}/ui/project/{project_id}")
-        page.wait_for_timeout(3000)
+
+        # Wait for interview to be ready
+        import urllib.request
+        url = f"{app_server}/api/monitoring/projects/{project_id}/interview"
+        for _ in range(60):
+            try:
+                resp = urllib.request.urlopen(url, timeout=2)
+                data = json.loads(resp.read())
+                if data.get("pending_questions"):
+                    break
+            except Exception:
+                pass
+            time.sleep(1)
 
         answers = [
             "A mobile app that helps children track and complete their daily tasks.",
