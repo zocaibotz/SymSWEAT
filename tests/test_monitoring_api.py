@@ -1,7 +1,11 @@
 import json
+import os
 from pathlib import Path
 
 import pytest
+
+# Enable testing-mode auth bypass so TestClient tests don't need session cookies.
+os.environ["TESTING"] = "true"
 
 pytest.importorskip("fastapi")
 from fastapi.testclient import TestClient

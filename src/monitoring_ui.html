@@ -72,6 +72,10 @@
         <div id="project-meta" class="muted"></div>
         <div style="margin-top:8px;">Project Stream: <strong id="project-stream" class="warn">connecting</strong></div>
       </div>
+      <div class="card" id="interview-section" style="margin-bottom:12px; display:none; border-color:#f3b544;">
+        <h3 style="margin-top:0; color:#f3b544;">Human-in-the-Loop: Action Required</h3>
+        <div id="interview-questions"></div>
+      </div>
       <div class="card" style="margin-bottom:12px;">
         <h3 style="margin-top:0">SWEAT Stage Progress</h3>
         <div id="stage-progress"></div>
@@ -205,6 +209,21 @@ function closeArtifactModal(evt){
   overlay.style.display = 'none';
 }
 
+async function submitAnswer(projectId, question, inputId) {
+  const ans = document.getElementById(inputId).value;
+  if (!ans.trim()) { alert('Please enter an answer.'); return; }
+  const res = await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}/interview/answer`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question: question, answer: ans })
+  });
+  if (!res.ok) {
+    alert('Failed to submit answer');
+    return;
+  }
+  await load();
+}
+
 async function viewArtifact(projectId, key){
   openArtifactModal(`Artifact: ${key}`, 'Loading artifact...');
   const res = await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}/artifacts/${encodeURIComponent(key)}`);
@@ -220,6 +239,24 @@ function renderProjectDetails(details){
   const summary = details.summary || {};
   document.getElementById('project-title').textContent = summary.display_name || state.projectId;
   document.getElementById('project-meta').textContent = `Status: ${summary.status} | Current stage: ${summary.current_stage} | Run: ${summary.latest_run_id || 'n/a'}`;
+
+  // Render interview / HITL section if there are pending questions
+  const interviewSection = document.getElementById('interview-section');
+  const interviewQuestionsEl = document.getElementById('interview-questions');
+  const interview = details.interview;
+  if (interview && interview.pending_questions && interview.pending_questions.length > 0) {
+    interviewSection.style.display = 'block';
+    interviewQuestionsEl.innerHTML = interview.pending_questions.map((q, i) => `
+      <div style="margin-bottom:14px; padding:10px; border:1px solid #31476a; border-radius:8px;">
+        <div style="margin-bottom:6px; font-weight:600; color:#f3b544;">Q${i+1}: ${esc(q)}</div>
+        <textarea id="interview-answer-${i}" rows="3" style="width:100%;padding:8px;border-radius:6px;border:1px solid #31476a;background:#16233b;color:#e7eefb;box-sizing:border-box;resize:vertical;" placeholder="Type your answer here..."></textarea>
+        <button onclick="submitAnswer('${esc(state.projectId)}', '${esc(q)}', 'interview-answer-${i}')" style="margin-top:6px; background:#f3b544; color:#111b2d; font-weight:bold;">Submit Answer</button>
+      </div>
+    `).join('');
+  } else {
+    interviewSection.style.display = 'none';
+    interviewQuestionsEl.innerHTML = '';
+  }
 
   const progress = (details.pipeline || []).map(step => {
     const color = step.status === 'completed' ? '#26c281' : (step.status === 'active' ? '#5ea3ff' : '#9fb2cf');
