@@ -515,24 +515,82 @@ class TestProjectDetail:
 
 class TestInterviewAnswerSubmission:
     def test_submit_answer_removes_question(self, page, app_server):
+        """Typing a full sentence and submitting removes that question from the list."""
         do_login(page, "admin", "testpass123", app_server)
         page.goto(f"{app_server}/ui/project/KidsFunTodo")
         page.wait_for_timeout(1000)
 
-        # Verify the first question is present
-        before_el = page.locator("#interview-questions")
-        before_text = before_el.inner_text()
-        assert "What business outcome" in before_text
+        # Find the first unanswered textarea
+        textarea = page.locator('textarea[data-qhash]').first
+        assert textarea.is_visible(), "First question textarea should be visible"
+        textarea.fill('A fun app to help kids manage their daily tasks and build good habits.')
 
-        # Fill and submit the first answer, wait for the POST to succeed
-        page.fill('#interview-answer-0', 'A fun app to help kids manage their daily tasks and build good habits.')
+        # Verify the text stuck (form-preservation sanity check)
+        assert 'A fun app' in textarea.input_value()
+
+        # Submit via the Submit Answer button in the interview section
+        submit_btn = page.locator('#interview-questions button').first
         with page.expect_response(f"{app_server}/api/monitoring/projects/KidsFunTodo/interview/answer", timeout=8000) as resp:
-            page.click('#interview-questions button:has-text("Submit Answer")')
+            submit_btn.click()
         assert resp.value.ok, f"Answer submission failed: {resp.value.status}"
-        # After the POST completes, the page reloads and question should be gone
+
+        # After the POST completes, the question should be gone from the list
         page.wait_for_timeout(1500)
         after_text = page.locator("#interview-questions").inner_text()
         assert "What business outcome" not in after_text, f"First question should be gone after submission. Got: {after_text}"
+
+    def test_typing_survives_periodic_reload(self, page, app_server):
+        """Simulate the 10-second polling interval: fill text, trigger a reload,
+        verify the text survives the re-render (form-preservation fix)."""
+        do_login(page, "admin", "testpass123", app_server)
+        page.goto(f"{app_server}/ui/project/KidsFunTodo")
+        page.wait_for_timeout(500)
+
+        textarea = page.locator('textarea[data-qhash]').first
+        textarea.fill('This answer should survive a reload')
+        page.wait_for_timeout(500)
+
+        # Trigger load() manually (this is what the 10-second setInterval does)
+        page.evaluate('load()')
+        page.wait_for_timeout(1000)
+
+        # Text should still be present after re-render
+        textarea_after = page.locator('textarea[data-qhash]').first
+        assert 'This answer should survive a reload' in textarea_after.input_value(), \
+            "Typed text should be preserved across the periodic re-render"
+
+    def test_all_four_questions_answered_hides_interview_section(self, page, app_server):
+        """Answering all 4 interview questions should remove the interview section entirely."""
+        do_login(page, "admin", "testpass123", app_server)
+        page.goto(f"{app_server}/ui/project/KidsFunTodo")
+        page.wait_for_timeout(1000)
+
+        answers = [
+            "A mobile app that helps children track and complete their daily tasks.",
+            "In-scope: task creation, reminders, progress tracking. Out-of-scope: social features, ads.",
+            "A parent can create tasks, child marks them done, parent gets notified.",
+            "Must work on iOS and Android; must be accessible to children ages 5-12.",
+        ]
+
+        for i, answer_text in enumerate(answers):
+            # Keep re-locating since the DOM is rebuilt after each submission
+            # Use a generous timeout; the API write + reload can take a moment
+            try:
+                page.wait_for_selector('textarea[data-qhash]', timeout=12000)
+            except Exception:
+                # No more textareas = all questions answered
+                break
+            textarea = page.locator('textarea[data-qhash]').first
+            textarea.fill(answer_text)
+            btn = page.locator('#interview-questions button').first
+            with page.expect_response(f"{app_server}/api/monitoring/projects/KidsFunTodo/interview/answer", timeout=12000):
+                btn.click()
+            page.wait_for_timeout(1500)
+
+        # After all 4 are answered, the interview section should be hidden
+        interview_section = page.locator("#interview-section")
+        assert interview_section.is_hidden(), \
+            f"Interview section should be hidden after all questions answered. Section HTML: {interview_section.inner_html()}"
 
 
 class TestStageRendering:

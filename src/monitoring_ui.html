@@ -209,9 +209,13 @@ function closeArtifactModal(evt){
   overlay.style.display = 'none';
 }
 
-async function submitAnswer(projectId, question, inputId) {
-  const ans = document.getElementById(inputId).value;
+async function submitAnswer(projectId, question, btn) {
+  const container = btn.closest('div');
+  const textarea = container ? container.querySelector('textarea') : null;
+  const ans = textarea ? textarea.value : '';
   if (!ans.trim()) { alert('Please enter an answer.'); return; }
+  btn.disabled = true;
+  btn.textContent = 'Submitting…';
   const res = await fetch(`/api/monitoring/projects/${encodeURIComponent(projectId)}/interview/answer`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -219,6 +223,8 @@ async function submitAnswer(projectId, question, inputId) {
   });
   if (!res.ok) {
     alert('Failed to submit answer');
+    btn.disabled = false;
+    btn.textContent = 'Submit Answer';
     return;
   }
   await load();
@@ -240,19 +246,37 @@ function renderProjectDetails(details){
   document.getElementById('project-title').textContent = summary.display_name || state.projectId;
   document.getElementById('project-meta').textContent = `Status: ${summary.status} | Current stage: ${summary.current_stage} | Run: ${summary.latest_run_id || 'n/a'}`;
 
+  // ── Preserve user input across periodic re-renders ─────────────────────────
+  // saveValues() snapshots current textarea content keyed by question text,
+  // so a 10-second setInterval reload doesn't wipe typed answers.
+  const savedValues = {};
+  const pendingQuestions = (details.interview && details.interview.pending_questions) || [];
+  for (const q of pendingQuestions) {
+    const hashKey = String(q).slice(0, 40);   // short stable key per question
+    const textarea = document.querySelector(`textarea[data-qhash="${hashKey}"]`);
+    if (textarea) savedValues[hashKey] = textarea.value;
+  }
+
   // Render interview / HITL section if there are pending questions
   const interviewSection = document.getElementById('interview-section');
   const interviewQuestionsEl = document.getElementById('interview-questions');
   const interview = details.interview;
-  if (interview && interview.pending_questions && interview.pending_questions.length > 0) {
+  if (interview && pendingQuestions.length > 0) {
     interviewSection.style.display = 'block';
-    interviewQuestionsEl.innerHTML = interview.pending_questions.map((q, i) => `
+    interviewQuestionsEl.innerHTML = pendingQuestions.map((q, i) => {
+      const hashKey = String(q).slice(0, 40);
+      const saved = savedValues[hashKey] || '';
+      return `
       <div style="margin-bottom:14px; padding:10px; border:1px solid #31476a; border-radius:8px;">
         <div style="margin-bottom:6px; font-weight:600; color:#f3b544;">Q${i+1}: ${esc(q)}</div>
-        <textarea id="interview-answer-${i}" rows="3" style="width:100%;padding:8px;border-radius:6px;border:1px solid #31476a;background:#16233b;color:#e7eefb;box-sizing:border-box;resize:vertical;" placeholder="Type your answer here..."></textarea>
-        <button onclick="submitAnswer('${esc(state.projectId)}', '${esc(q)}', 'interview-answer-${i}')" style="margin-top:6px; background:#f3b544; color:#111b2d; font-weight:bold;">Submit Answer</button>
-      </div>
-    `).join('');
+        <textarea
+          data-qhash="${esc(hashKey)}"
+          rows="3"
+          style="width:100%;padding:8px;border-radius:6px;border:1px solid #31476a;background:#16233b;color:#e7eefb;box-sizing:border-box;resize:vertical;"
+          placeholder="Type your answer here...">${esc(saved)}</textarea>
+        <button onclick="submitAnswer('${esc(state.projectId)}', '${esc(q.replace(/'/g, "\\'"))}', this)" style="margin-top:6px; background:#f3b544; color:#111b2d; font-weight:bold;">Submit Answer</button>
+      </div>`;
+    }).join('');
   } else {
     interviewSection.style.display = 'none';
     interviewQuestionsEl.innerHTML = '';
