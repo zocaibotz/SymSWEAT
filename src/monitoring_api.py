@@ -61,7 +61,6 @@ NODE_TO_STAGE = {
     "automator": "ci_deploy_automator",
     "scrumlord": "ci_deploy_automator",
     "sprint_executor": "ci_deploy_automator",
-    "__end__": "ci_deploy_automator",
 }
 
 class NewProjectRequest(BaseModel):
@@ -312,10 +311,10 @@ def _latest_route_stage(events: List[Dict[str, Any]], fallback: str) -> str:
         if event.get("event_type") == "route_decision":
             payload = event.get("payload") if isinstance(event.get("payload"), dict) else {}
             next_node = payload.get("next_node")
-            if next_node:
+            if next_node and next_node != "__end__":
                 return _normalize_stage(str(next_node))
         node = event.get("node")
-        if node:
+        if node and node != "__end__":
             return _normalize_stage(str(node))
     return fallback
 
@@ -327,9 +326,10 @@ def _project_summary(project_id: str) -> Dict[str, Any]:
     events = _read_jsonl(paths["run_events"])
 
     lifecycle = state_doc.get("lifecycle") if isinstance(state_doc.get("lifecycle"), dict) else {}
-    current_stage = _normalize_stage(lifecycle.get("phase"))
-    if not lifecycle.get("phase"):
-        current_stage = _latest_route_stage(events, current_stage)
+    phase = lifecycle.get("phase")
+    current_stage = _normalize_stage(phase) if phase and phase != "__end__" else None
+    if not current_stage:
+        current_stage = _latest_route_stage(events, "requirement_master")
 
     runs = run_index.get("runs") if isinstance(run_index.get("runs"), dict) else {}
     latest_run_id = run_index.get("latest_run_id") or lifecycle.get("current_run_id")

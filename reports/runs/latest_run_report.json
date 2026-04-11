@@ -1,6 +1,6 @@
 {
-  "project_id": "claw-node-monitor-123",
-  "run_id": "run_2026-04-10T13-27-33Z_0e5692",
+  "project_id": "proj-aa4f9fc0",
+  "run_id": "run_2026-04-11T02-53-46Z_04de0d",
   "events": [
     {
       "node": "zocai",
@@ -9,9 +9,9 @@
     },
     {
       "node": "req_master_interview",
-      "duration_ms": 8081,
+      "duration_ms": 5716,
       "next_agent": "__end__"
     }
   ],
-  "updated_at_epoch": 1775827661
+  "updated_at_epoch": 1775876032
 }
